@@ -45,6 +45,8 @@
   .headercontainer{
     width: 100%;
     background-color: #ededed;
+    box-shadow: 0 4px 8px -4px #535353;
+   
   }
   .main-nav {
    
@@ -156,4 +158,5 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+ 
   }
