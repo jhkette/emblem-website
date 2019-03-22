@@ -1,0 +1,151 @@
+@font-face {
+  font-family: Parisr;
+  src: url(./fonts/parisr.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+  }
+  html{
+      font-size: 100%;
+  }
+
+
+  h1{
+    font-family: 'Parisr';
+    font-size: 2.5em;
+    display: block;
+    line-height: .6em;
+    color: #2b2b2b;
+  }
+  .smaller{
+    font-size: .5em;
+    display: block;
+  }
+
+  
+  body {
+    margin: 0px;
+    font-family: "Helvetica Neue", Helvetica, Arial,  sans-serif;
+    color: #2b2b2b;
+  }
+
+
+  
+  .main-nav {
+   
+    width: 100%;
+    background-color: #ededed;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+  }
+  
+ 
+  
+ .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #1a1a1a;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .logo{
+    background-image: url(logo.png);
+    height: 5em;
+    width: 5em;
+    border: 1px solid red;
+    display: inline-block;
+    background-position: center;
+  }
+  
+ .nav-btn {
+    display: none;
+  }
+  
+  .nav-links {
+    display: inline-block;
+
+    
+    font-size: 18px;
+  }
+  
+.nav-links{
+    height: 2em;
+}
+
+  .nav-links li{
+      list-style: none;
+      display: inline-block;
+  }
+
+ .nav-links  a {
+    display: inline-block;
+    margin: .4em .6em;
+    text-decoration: none;
+    color: #1a1a1a;
+  }
+
+  .nav-links  a:hover{
+      border-bottom: 5px solid #226841;
+      transition-duration: .3s;
+  }
+  
+  #current{
+    border-bottom: 5px solid #226841;
+  }
+   .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  @media (max-width:800px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+      
+        
+      }
+  }
+  
+  @media (max-width:600px) {
+     nav{
+       width: 100%;
+     }
+    .main-nav {
+      flex-direction: column;
+    }
+    .nav-links {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      
+      background-color: #4E4E4E;  
+      
+    }
+     .nav-links li a {
+      display: block;
+      width: 100%;
+      color: white;
+    }
+    .nav-links  li a:hover{
+        border: 0;
+        background-color: black;
+    } 
+  }
+
+
+  .leadimage{
+    height: 31em;
+    background-image: url(hand-book.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
