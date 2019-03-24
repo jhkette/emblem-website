@@ -34,11 +34,13 @@ h2{
 
 h3{
   font-size: 1.7em;
+  margin: 1em 0;
 }
 
 p{
   font-size: 1.2em;
   color: #1a1a1a;
+  margin: 1em 0;
 }
 
 .leadimage h2{
@@ -266,6 +268,7 @@ main{ width: 100%;}
   color: black;
 }
 
+
 /* Style the back side */
 .flip-card-back {
   background-color: #1a1a1a;
@@ -273,6 +276,13 @@ main{ width: 100%;}
   transform: rotateY(180deg);
 } 
 
+.flip-card-back h3{
+  color: white;
+}
+
+.flip-card-back p{
+  color: white;
+}
 
 
 @media (max-width:960px) {
@@ -284,4 +294,21 @@ main{ width: 100%;}
    flex-basis: 40em;
   
  }
+
+}
+.abouttext{
+  position: absolute;
+  top: -1em;
+  color: white;
+  font-size: 2em;
+  font-family: 'Merriweather';
+}
+.bookscontainer{
+  background-color: #D4E9DE;
+  height: 50vh;
+}
+
+.books{
+  width: 95%;
+  margin: auto;
 }
