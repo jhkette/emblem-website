@@ -28,13 +28,22 @@ h1 {
 }
 
 h2{
-  font-family: 'Merriweather', serif;
+  font-family: 'Crimson Text', serif;
 
 }
 
 h3{
-  font-size: 1.7em;
-  margin: 1em 0;
+  font-size: 2.1em;
+  margin: .5em 0 1em 0;
+  font-family: 'Crimson Text', serif;
+  font-weight: 200;
+}
+
+h4{
+  font-size: 1.5em;
+  margin: .5em 0 1em 0;
+  font-family: 'Crimson Text', serif;
+  font-weight: 200;
 }
 
 p{
@@ -62,7 +71,7 @@ p{
 
 body {
 
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
   color: #1a1a1a;
 }
 
@@ -77,7 +86,7 @@ body {
 }
 
 .mainheader{
-  width: 95%;
+  width: 90%;
   margin: auto;
   position: relative;
 
@@ -122,7 +131,7 @@ body {
   background-image: url(logo.png);
   height: 74px;
   width: 96px;
-  border: 1px solid red;
+
   display: inline-block;
   background-position: center;
   margin-right: .2em;
@@ -136,7 +145,7 @@ body {
 }
 
 .nav-links a {
-  margin: .4em .6em;
+  margin: .4em .4em;
   text-decoration: none;
   color: #1a1a1a;
 }
@@ -209,106 +218,170 @@ body {
 main{ width: 100%;}
 
 .intro-container {
-  width: 95%;
+  width: 90%;
   margin: auto;
   display: flex;
-  justify-content: space-between
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 5em;
+  justify-content: space-between;
+
 
 }
 
 .intro-col{
-  flex-basis: 45%;
+  width: 360px;
   text-align: left;
-  border: 1px solid red;
-  margin-top: 3rem;
+
+  margin-top: 2rem;
+
 }
 
+.intro-col h3{
+  
+  width: 75%;
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+
+video{
+  width: 360;
+  height: 275;
+  
+}
 .center {
   
-  width: 480px;
+  width: 360px;
   margin: auto;
 }
 
  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
- .flip-card {
-   margin: auto;
-  background-color: transparent;
-  width: 480px;
-  height: 360px;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+.parentimage{
+  width: 360px;
+  height: 275px;
+  margin: auto;
+  overflow: hidden;
+
 }
 
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100.5%;
-  height: 100.5%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
+.colimage{
+  background-image: url('./books600.jpg');
+  border: 1px solid blue;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  
+  
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
+
+
+
+.colimage h4 {
+  display: none;
+  font-size: 35px;
+  color: #ffffff !important;
+  font-family: sans-serif;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  cursor: pointer;
+  /*text-decoration: none;*/
 }
 
 
-/* Style the back side */
-.flip-card-back {
-  background-color: #1a1a1a;
-  color: white !important;
-  transform: rotateY(180deg);
-} 
-
-.flip-card-back h3{
-  color: white;
+.colimage:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(66, 100, 83, 0.85);
 }
 
-.flip-card-back p{
-  color: white;
+.parentimage:hover .colimage:before, .parentimage:focus .colimage:before {
+  display: block;
 }
 
+.parentimage:hover .colimage h4, .parentimage:hover .colimage h4 {
+  display: block;
+}
+
+
+.parentimage:hover .colimage,
+.parentimage:focus .colimage {
+  transform: scale(1.2);
+}
 
 @media (max-width:960px) {
  .intro-container{
    flex-direction: column;
- 
  }
+
  .intro-col{
-   flex-basis: 40em;
+   width: 90%;  
+ }
+ .intro-col h3{
+   /* This is a fallback rule for ie and early edge browsers, where max-content is not available */
+  width: 35%;  
+  width: max-content;
+
+}
+
+ .parentimage{
+   width: 600px;
+   margin: auto;
+   height: 450px;
+ }
+ .center{
+   width: 600px;
+ }
+ video{
+  width: 600px;
+   
   
+  height: 450px;
+  margin: auto;
  }
 
 }
 .abouttext{
-  position: absolute;
-  top: -1em;
+ 
+  width: 60%;
   color: white;
-  font-size: 2em;
-  font-family: 'Merriweather';
+  font-size: 2.5em;
+  font-family: 'Crimson Text';
 }
 .bookscontainer{
   background-color: #D4E9DE;
-  height: 50vh;
+ 
 }
 
+
 .books{
-  width: 95%;
+  width: 90%;
   margin: auto;
+  padding-top: 3em;
+}
+
+.booklist{
+  display: flex;
+  justify-content: space-between;
+}
+
+.booktext{
+  width: 85%;
+  margin-left: 2em;
 }
