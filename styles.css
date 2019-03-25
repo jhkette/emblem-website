@@ -209,10 +209,10 @@ body {
 
 .leadimage {
   height: 30em;
-  background-image: url(hand-book.jpg);
+  background-image: url(books-novels.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 
 main{ width: 100%;}
