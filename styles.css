@@ -496,6 +496,11 @@ video {
   padding: 4em 0;
 }
 
+.bsvtext h3{
+  border-bottom: 1px solid #226841;
+  width: 8em;
+}
+
 .bsvtext.selling{
   display: flex;
   justify-content: space-between;
