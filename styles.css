@@ -288,7 +288,7 @@ main {
 }
 
 .intro-col {
-  width: 360px;
+  width: 22.5em;
   text-align: left;
 
   margin-top: 2rem;
@@ -312,15 +312,15 @@ video {
 
 .center {
 
-  width: 360px;
+  width: 22.5em;
   margin: auto;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
 .parentimage {
-  width: 360px;
-  height: 275px;
+  width: 22.5em;
+  height: 17.1875em;
   margin: auto;
   overflow: hidden;
 
@@ -463,6 +463,10 @@ video {
   padding-bottom: 4em;
 }
 
+.booklist span {
+  display: block;
+}
+
 .booklist img{
   margin-top: 1em;
 }
@@ -493,7 +497,9 @@ video {
 }
 
 .bsvtext{
-  padding: 4em 0;
+  padding: 3em 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .bsvtext h3{
@@ -502,8 +508,7 @@ video {
 }
 
 .bsvtext.selling{
-  display: flex;
-  justify-content: space-between;
+ 
   padding-left: 5%;
 }
 
@@ -516,7 +521,7 @@ video {
 }
 
 .bsvtext.valuing h3{
-  margin-left: 1.5em;
+  margin-left: 1.714em;
 }
 
 .bsv.selling img{
@@ -526,10 +531,43 @@ margin-top: 3em;
 }
 
 .bsvtext.valuing{
-  display: flex;
-  justify-content: space-between;
+  
   padding-right: 5%;
   padding-left: 0;
 }
 
 
+@media (max-width:960px) {
+
+  .bsvtext{
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bsvtext img {
+    display: none;
+  }
+  .bsvtext.valuing p {
+    margin: 0
+}
+
+.bsvtext.valuing h3 {
+  margin: .5em 0 1em 0;
+}
+.bsvtext.valuing p {
+  margin: 1em 3em 1em 0em;
+}
+
+.bsvtext.valuing  {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.bsvtext.selling{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+
+
+}
