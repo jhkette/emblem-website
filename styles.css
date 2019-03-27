@@ -524,6 +524,7 @@ main {
   padding: 2em 0;
   display: flex;
   justify-content: space-between;
+  
 }
 
 .bsvtext h3{
@@ -546,7 +547,7 @@ main {
 }
 
 .bsvtext.valuing h3{
-  margin-left: 1.714em;
+  margin-left: 2em;
 }
 
 .bsv.selling img{
