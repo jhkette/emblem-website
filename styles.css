@@ -48,14 +48,14 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   margin: .5em 0 1em 0;
   font-family: 'Crimson Text', serif;
   font-weight: 200;
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: #1a1a1a;
   margin: 1em 0;
   line-height: 1.5em;
@@ -281,7 +281,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-bottom: 5em;
+  padding: 4em 0 6em 0;
   justify-content: space-between;
 
 
@@ -300,7 +300,7 @@ main {
   width: 75%;
   font-size: 1.6em;
   text-transform: uppercase;
-  border-bottom: 1px solid #236841;
+  border-bottom: 2px solid #236841;
 
 }
 
@@ -440,6 +440,7 @@ video {
 
 .bookscontainer {
   background-color: #D4E9DE;
+  padding: 3em 0;
 
 }
 
@@ -490,20 +491,20 @@ video {
   background-color: #ededed;
   width: 100%;
   
-  padding-top: 2em;
+  padding: 4em 0;
   
 
 
 }
 
 .bsvtext{
-  padding: 3em 0;
+  padding: 2em 0;
   display: flex;
   justify-content: space-between;
 }
 
 .bsvtext h3{
-  border-bottom: 1px solid #226841;
+  border-bottom: 2px solid #226841;
   width: 8em;
 }
 
@@ -570,4 +571,11 @@ margin-top: 3em;
 
 
 
+}
+
+
+.footercontainer{
+  border-top: 1px solid #cccccc;
+  background-color: #D4E9DE;
+  height: 25em;
 }
