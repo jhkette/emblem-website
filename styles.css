@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   margin: .5em 0 1em 0;
   font-family: 'Crimson Text', serif;
   font-weight: 200;
@@ -56,7 +56,7 @@ h4 {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.15em;
   color: #1a1a1a;
   margin: 1em 0;
   line-height: 1.5em;
@@ -227,7 +227,7 @@ p {
 /* lead image */
 
 .leadimage {
-  height: 36em;
+  height: 30em;
   background-image: url(hand-book.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -255,6 +255,7 @@ p {
   font-size: 1.2em;
   border-radius: .15em;
   margin-top: .7em;
+  font-size: 1.1em;
 
 
 }
@@ -264,8 +265,7 @@ p {
   background-color: rgba(255, 255, 255, 0);
   color: #1a1a1a;
   padding: .5em 2em;
-  font-size: 1.2em;
-  border-radius: .15em;
+
   margin-top: 2.7em;
   
 
@@ -275,8 +275,16 @@ p {
   background-color: #f5f5f5;
   color: #1a1a1a;
   transition: .3s;
-  border: 2px solid #1a1a1a;
+  border: 1px solid #1a1a1a;
 }
+
+.main-button.dark:hover {
+  background-color: #1a1a1a;
+  color:#f5f5f5;
+  transition: .3s;
+  border: 1px solid #f5f5f5;
+}
+
 
 .heading-text {
   width: 90%;
@@ -295,7 +303,7 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 3em 0 5em 0;
+  padding: 1em 0 3em 0;
   justify-content: space-between;
 
 
@@ -318,17 +326,8 @@ main {
 
 }
 
-/* video {
-  width: 336px;
-  height: 226.8px;
 
-} */
 
-.center {
-
-  width: 22.5em;
-  margin: auto;
-}
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
@@ -410,10 +409,12 @@ main {
 @media (max-width:960px) {
   .intro-container {
     flex-direction: column;
+    width: 85%;
   }
 
   .intro-col {
-    width: 90%;
+    width: 100%;
+    margin: 1em auto;
   }
 
   .intro-col h3 {
@@ -425,21 +426,20 @@ main {
   }
 
   .parentimage {
-    width: 600px;
+    width: 400px;
     margin: auto;
-    height: 450px;
+    height: 300px;
   }
 
   .center {
-    width: 600px;
+    width: 400px;
+    margin: auto;
   }
 
   video {
-    width: 600px;
-
-
-    height: 450px;
-    margin: auto;
+    width: 400px;
+    height: 300px;
+    
   }
 
 }
@@ -453,8 +453,9 @@ main {
 }
 
 .bookscontainer {
-  background-color: #D4E9DE;
-  padding: 2em 0;
+  background: rgb(171,195,183);
+background: linear-gradient(90deg, rgba(171,195,183,1) 0%, rgba(197,218,207,1) 35%, rgba(223,238,240,1) 100%);
+padding: 3em 0 2em 0;
 
 }
 
@@ -462,20 +463,18 @@ main {
 .books {
   width: 90%;
   margin: auto;
-  padding-top: 3em;
 }
 
 .booklist.feature {
   display: flex;
   justify-content: flex-start;
-  padding-bottom: 6em;
+  padding-bottom: 1em;
 }
 
 
 .booklist {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 4em;
 }
 
 
@@ -489,7 +488,7 @@ main {
 }
 
 .booklist h4{
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-transform: uppercase;
 }
 
@@ -498,6 +497,7 @@ main {
 .booktext {
   width: 85%;
   margin-left: 2em;
+  padding-bottom: 3em;
 }
 
 .non-featured{
@@ -577,21 +577,26 @@ margin-top: 3em;
   .bsvtext.valuing p {
     margin: 0
 }
-
+.bsvtext.selling h3 {
+  margin:  0.625em 0;
+}
 .bsvtext.valuing h3 {
-  margin: .5em 0 1em 0;
+  margin:  0.625em 0;
 }
 .bsvtext.valuing p {
-  margin: 1em 3em 1em 0em;
+  margin: 1em 0;
+}
+.bsvtext.selling p{
+  margin: 1em 0;
 }
 
 .bsvtext.valuing  {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
 }
 .bsvtext.selling{
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 7.5%;
+  padding-right: 7.5%;
 }
 
 
