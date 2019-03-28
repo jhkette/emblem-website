@@ -98,21 +98,24 @@ p {
 }
 
 .mainheader {
-  width: 90%;
   margin: auto;
   position: relative;
+}
 
+.commonlinks{
+  width: 90%;
+  margin: auto;
 }
 
 .commonlinks ul {
   list-style: none;
   display: flex;
   justify-content: flex-end;
-  padding-top: .8em;
+  padding-top: .25em;
 }
 
 .commonlinks li {
-  font-size: .9em;
+  font-size: .75em;
   padding-left: 1em;
 }
 
@@ -129,7 +132,9 @@ p {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: .5em 0;
+  padding: 1em 0 .4em 0;
+  width: 90%;
+  margin: auto;
 }
 
 .nav-header {
@@ -199,7 +204,7 @@ p {
 
   .logonav {
     flex-direction: column;
-    width: 100%;
+    width: 90%;
   }
 
   .nav-links {
@@ -234,6 +239,7 @@ p {
   background-size: cover;
   background-position: center;
   position: relative;
+  width: 100%;
 
 }
 
@@ -286,7 +292,7 @@ p {
   width: 90%;
   margin: auto;
   position: relative;
-  top: 16em;
+  top: 14em;
 }
 
 main {
@@ -389,25 +395,15 @@ main {
   display: block;
 }
 
-
-
 .parentimage:hover .colimage,
 .parentimage:focus .colimage {
   transform: scale(1.2);
 }
 
 @media (max-width:960px) {
-  .leadimage h2 {
-    position: relative;
-    top: -2.5em;
+  .heading-text{
+    top: 9em;
   }
-
-  .leadimage p,
-  button {
-    position: relative;
-    top: -5.5em;
-  }
-
   .intro-container {
     flex-direction: column;
     width: 85%;
@@ -458,8 +454,8 @@ main {
 }
 
 .bookscontainer {
-  background: rgb(195, 228, 211);
-  background: linear-gradient(90deg, rgba(195, 228, 211, 1) 0%, rgba(212, 233, 222, 1) 47%, rgba(231, 249, 245, 1) 100%);
+  background: rgb(196,222,208);
+background: linear-gradient(90deg, rgba(196,222,208,1) 0%, rgba(212,233,222,1) 47%, rgba(231,249,243,1) 100%);
   padding: 3em 0 2em 0;
 }
 
@@ -629,6 +625,12 @@ main {
 
 .footercontainer {
   border-top: 1px solid #cccccc;
-  background-color: #2D2D2D;
+  background-color: #DBDBDB;
   height: 25em;
+}
+
+.commonlinkscontainer{
+  background-color: #d4e9de;
+  height: 1.5em;
+  width: 100%;
 }
