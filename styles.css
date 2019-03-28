@@ -60,7 +60,7 @@ p {
   font-size: 1.15em;
   color: #1a1a1a;
   margin: 1em 0;
-  line-height: 1.5em;
+  line-height: 1.6em;
   font-weight: 500;
 }
 
@@ -319,10 +319,6 @@ main {
 }
 
 
-
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-
 .parentimage {
   width: 18em;
   height:  13.5em;
@@ -399,6 +395,14 @@ main {
 }
 
 @media (max-width:960px) {
+  .leadimage h2{
+    position: relative;
+    top: -2.5em;
+  }
+  .leadimage p, button{
+    position: relative;
+    top: -5.5em;
+  }
   .intro-container {
     flex-direction: column;
     width: 85%;
