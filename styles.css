@@ -304,9 +304,14 @@ main {
 }
 
 .intro-col {
-  width: 18em;
+  width: 17em;
   text-align: left;
   margin-top: 2rem;
+}
+
+.intro-col.lead{
+  width: 480px;
+
 }
 
 .intro-col h3 {
@@ -320,20 +325,16 @@ main {
 
 
 .parentimage {
-  width: 18em;
-  height:  13.5em;
+  width: 17em;
+  height:  12em;
   margin: auto;
   overflow: hidden;
 
 }
 
 .colimage {
-
-
   width: 100%;
   height: 100%;
-
-
   background-repeat: no-repeat;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
@@ -409,6 +410,10 @@ main {
   }
 
   .intro-col {
+    width: 100%;
+    margin: 1em auto;
+  }
+  .intro-col.lead {
     width: 100%;
     margin: 1em auto;
   }
@@ -564,7 +569,7 @@ main {
 }
 
 .bsvtext.valuing h3 {
-  margin-left: 2em;
+  margin-left: 2.15625em;
 }
 
 .bsv.selling img {
