@@ -68,7 +68,6 @@ p {
   width: 70%;
   color: whitesmoke;
   line-height: 1em;
-
   text-shadow: 2px 2px 2px #535353;
   font-size: 3.3em;
   line-height: 1.1em;
@@ -140,7 +139,7 @@ p {
 }
 
 .logo {
-  background-image: url(logo.png);
+  background-image: url('logo.png');
   height: 74px;
   width: 96px;
   display: inline-block;
@@ -156,20 +155,21 @@ p {
 }
 
 .nav-links a {
-  margin: .4em .4em;
+  margin: .4em;
   text-decoration: none;
   color: #1a1a1a;
 }
 
 .nav-links a:hover {
-  border-bottom: 5px solid #226841;
+  border-bottom: 4px solid #226841;
   transition-duration: .1s;
 }
 
 #current {
-  border-bottom: 5px solid #226841;
+  border-bottom: 4px solid #226841;
 }
 
+/* MEDAI QUERIES FOR HEADER/NAVIGATION */
 @media (max-width:960px) {
   .logonav {
     flex-direction: column;
@@ -257,8 +257,6 @@ p {
   border-radius: .15em;
   margin-top: .7em;
   font-size: 1.1em;
-
-
 }
 
 .main-button.dark {
@@ -266,10 +264,7 @@ p {
   background-color: rgba(255, 255, 255, 0);
   color: #1a1a1a;
   padding: .5em 2em;
-
   margin-top: 2.7em;
-
-
 }
 
 .main-button:hover {
@@ -306,16 +301,12 @@ main {
   flex-wrap: wrap;
   padding: 1em 0 3em 0;
   justify-content: space-between;
-
-
 }
 
 .intro-col {
-  width: 22.5em;
+  width: 18em;
   text-align: left;
-
   margin-top: 2rem;
-
 }
 
 .intro-col h3 {
@@ -333,8 +324,8 @@ main {
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
 .parentimage {
-  width: 22.5em;
-  height: 16.875em;
+  width: 18em;
+  height:  13.5em;
   margin: auto;
   overflow: hidden;
 
