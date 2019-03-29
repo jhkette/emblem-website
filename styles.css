@@ -92,7 +92,7 @@ p {
   position: relative;
   width: 100%;
   background-color: #ededed;
-  box-shadow: 0 4px 16px -4px #363636;
+  box-shadow:0 4px 8px -4px #a7a4a4;
   z-index: 1;
 }
 
