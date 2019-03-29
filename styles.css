@@ -88,23 +88,26 @@ p {
 }
 
 
-/* header and navigation */
-.headercontainer {
+.mainheader {
+  
+  position: relative;
   width: 100%;
   background-color: #ededed;
-  box-shadow: 0 4px 12px -4px #535353;
+  box-shadow: 0 4px 16px -4px #363636;
   z-index: 1;
-  position: relative;
-}
-
-.mainheader {
-  margin: auto;
-  position: relative;
+ 
 }
 
 .commonlinks{
   width: 90%;
   margin: auto;
+}
+
+.commonlinkscontainer{
+  background-color: #e5e8e6;
+  height: 1.5em;
+  width: 100%;
+  border: 1px solid #ddd;
 }
 
 .commonlinks ul {
@@ -233,13 +236,14 @@ p {
 /* lead image */
 
 .leadimage {
-  height: 30em;
+  height: 32em;
   background-image: url(hand-book.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   width: 100%;
+  z-index: -1;
 
 }
 
@@ -629,8 +633,3 @@ background: linear-gradient(90deg, rgba(196,222,208,1) 0%, rgba(212,233,222,1) 4
   height: 25em;
 }
 
-.commonlinkscontainer{
-  background-color: #d4e9de;
-  height: 1.5em;
-  width: 100%;
-}
