@@ -1,0 +1,35 @@
+/* Book page css */
+
+.books-intro {
+    margin-top: 3.5em;
+    flex-basis: 66%;
+}
+
+.books-intro h2{
+    font-size: 1.8em;
+    text-transform: uppercase;
+}
+
+/* side navigation */
+
+.sidenav {
+    flex-basis: 33%;
+}
+
+.sidenav ul {
+    margin-top: 3em;
+    list-style: none;
+    font-size: 1.1em;
+}
+
+.sidenav li {
+    padding-top: .8em;
+    border-bottom: solid 1px #ddd;
+    margin-right: 3em;
+
+}
+
+.sidenav li a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
