@@ -1,11 +1,11 @@
 /* import font */
 @font-face {
   font-family: Parisr;
-  src: url('../fonts/parisr.woff'),   
-   url('../fonts/parisr.eot?#iefix'),
-   url('../fonts/parisr.eot'),
-   url('../fonts/parisr.ttf'),
-   url('../fonts/parisr.svg'); 
+  src: url('../fonts/parisr.woff'),
+    url('../fonts/parisr.eot?#iefix'),
+    url('../fonts/parisr.eot'),
+    url('../fonts/parisr.ttf'),
+    url('../fonts/parisr.svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -70,7 +70,7 @@ p {
 }
 
 .leadimage h2 {
-  
+
   color: #1a1a1a;
   line-height: 1em;
   margin-top: .6em;
@@ -101,17 +101,17 @@ p {
   z-index: 1;
 }
 
-.commonlinks{
+.commonlinks {
   width: 90%;
   margin: auto;
 }
 
-.commonlinkscontainer{
+.commonlinkscontainer {
   background-color: #ddd;
- 
+
   height: 1.55em;
   width: 100%;
-  
+
 }
 
 .commonlinks ul {
@@ -251,9 +251,9 @@ p {
 
 }
 
-.positiontext{
+.positiontext {
   width: 90%;
-  margin:auto;
+  margin: auto;
 }
 
 .leadimage:before {
@@ -406,10 +406,11 @@ main {
 }
 
 @media (max-width:960px) {
-  .heading-text{
+  .heading-text {
     top: 12.5em;
     width: 85%;
   }
+
   .intro-container {
     flex-direction: column;
     width: 85%;
@@ -453,8 +454,8 @@ main {
 }
 
 .bookscontainer {
-  background: rgb(196,222,208);
-background: linear-gradient(90deg, rgba(196,222,208,1) 0%, rgba(212,233,222,1) 47%, rgba(231,249,243,1) 100%);
+  background: rgb(196, 222, 208);
+  background: linear-gradient(90deg, rgba(196, 222, 208, 1) 0%, rgba(212, 233, 222, 1) 47%, rgba(231, 249, 243, 1) 100%);
   padding: 3em 0 2em 0;
 }
 
@@ -531,6 +532,7 @@ background: linear-gradient(90deg, rgba(196,222,208,1) 0%, rgba(212,233,222,1) 4
     width: auto;
     padding-bottom: 0;
   }
+
   .non-featured {
     padding-right: 0;
   }
@@ -560,13 +562,12 @@ background: linear-gradient(90deg, rgba(196,222,208,1) 0%, rgba(212,233,222,1) 4
 }
 
 
-.bsvtext.selling h3{
+.bsvtext.selling h3 {
   margin-right: 3.59375em;
 
 }
 
 .bsvtext.selling {
-
   padding-left: 5%;
 }
 
@@ -612,6 +613,12 @@ background: linear-gradient(90deg, rgba(196,222,208,1) 0%, rgba(212,233,222,1) 4
     margin-left: 0;
   }
 
+
+  .bsvtext.selling h3 {
+    margin-right: 0em;
+
+  }
+
   .bsvtext.valuing p {
     margin: 1em 0;
   }
@@ -637,4 +644,3 @@ background: linear-gradient(90deg, rgba(196,222,208,1) 0%, rgba(212,233,222,1) 4
   background-color: #DBDBDB;
   height: 25em;
 }
-
