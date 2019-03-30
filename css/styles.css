@@ -1,7 +1,11 @@
 /* import font */
 @font-face {
   font-family: Parisr;
-  src: url(./fonts/parisr.woff);
+  src: url('../fonts/parisr.woff'),   
+   url('../fonts/parisr.eot?#iefix'),
+   url('../fonts/parisr.eot'),
+   url('../fonts/parisr.ttf'),
+   url('../fonts/parisr.svg'); 
   font-weight: normal;
   font-style: normal;
 }
@@ -47,6 +51,7 @@ h3 {
   font-family: 'Crimson Text', serif;
   font-weight: 200;
   text-transform: uppercase;
+  border-bottom: 1px solid #1a1a1a;
 }
 
 h4 {
@@ -66,19 +71,19 @@ p {
 
 .leadimage h2 {
   
-  color: whitesmoke;
+  color: #1a1a1a;
   line-height: 1em;
-  text-shadow: 2px 2px 2px #535353;
-  font-size: 3.3em;
+  margin-top: .6em;
+  font-size: 2.3em;
   line-height: 1.1em;
 }
 
 .leadimage p {
   line-height: 1em;
   width: 50%;
-  color: whitesmoke;
+  color: #1a1a1a;
   margin: .5em 0 .4em 0em;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .smaller {
@@ -92,7 +97,7 @@ p {
   position: relative;
   width: 100%;
   background-color: #ededed;
-  box-shadow:0 4px 8px -4px #a7a4a4;
+  box-shadow: 0 4px 6px -4px #a7a4a4;
   z-index: 1;
 }
 
@@ -102,10 +107,11 @@ p {
 }
 
 .commonlinkscontainer{
-  background-color: #e6e6e6;
-  height: 1.5em;
+  background-color: #ddd;
+ 
+  height: 1.55em;
   width: 100%;
-  border: 1px solid #ddd;
+  
 }
 
 .commonlinks ul {
@@ -145,7 +151,7 @@ p {
 }
 
 .logo {
-  background-image: url('./images/logos/logo.png');
+  background-image: url('../images/logos/logo.png');
   height: 74px;
   width: 96px;
   display: inline-block;
@@ -235,7 +241,7 @@ p {
 
 .leadimage {
   height: 32em;
-  background-image: url('./images/home/hand-book.jpg');
+  background-image: url('../images/home/bookslead.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -243,6 +249,11 @@ p {
   width: 100%;
   z-index: -1;
 
+}
+
+.positiontext{
+  width: 90%;
+  margin:auto;
 }
 
 .leadimage:before {
@@ -257,9 +268,9 @@ p {
 }
 
 .main-button {
-  border: 1px solid #F5F5F5;
+  border: 1px solid #1a1a1a;
   background-color: rgba(255, 255, 255, 0);
-  color: #F5F5F5;
+  color: #1a1a1a;
   padding: .5em 2em;
   font-size: 1.2em;
   border-radius: .15em;
@@ -291,8 +302,10 @@ p {
 
 
 .heading-text {
-  width: 90%;
-  margin: auto;
+  width: 36em;
+  background-color: rgba(204, 227, 215, 0.9);
+  padding: 1em;
+  height: 14em;
   position: relative;
   top: 14em;
 }
@@ -314,19 +327,13 @@ main {
 .intro-col {
   width: 17em;
   text-align: left;
-  margin-top: 2rem;
+  margin-top: 1em;
 }
 
 .intro-col.lead {
   width: 480px;
 }
 
-.intro-col h3 {
-  width: 75%;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  border-bottom: 2px solid #236841;
-}
 
 
 .parentimage {
@@ -348,13 +355,13 @@ main {
 }
 
 #about {
-  background-image: url('./books600.jpg');
+  background-image: url('../books600.jpg');
 
 }
 
 #book {
 
-  background-image: url('./gatsby.jpg');
+  background-image: url('../gatsby.jpg');
 
 }
 
@@ -418,12 +425,6 @@ main {
     margin: 1em auto;
   }
 
-  .intro-col h3 {
-    /* This is a fallback rule for ie and early edge browsers, where max-content is not available */
-    width: 35%;
-    width: max-content;
-
-  }
 
   .parentimage {
     width: 400px;
@@ -439,7 +440,6 @@ main {
   video {
     width: 400px;
     height: 300px;
-
   }
 
 }
@@ -461,6 +461,10 @@ background: linear-gradient(90deg, rgba(196,222,208,1) 0%, rgba(212,233,222,1) 4
 .books {
   width: 90%;
   margin: auto;
+}
+
+.books h3 {
+  border-bottom: 0;
 }
 
 .booklist.feature {
@@ -501,7 +505,8 @@ background: linear-gradient(90deg, rgba(196,222,208,1) 0%, rgba(212,233,222,1) 4
 .non-featured {
   display: flex;
   justify-content: flex-start;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
+  padding-right: 2em;
 }
 
 .books img {
@@ -526,6 +531,9 @@ background: linear-gradient(90deg, rgba(196,222,208,1) 0%, rgba(212,233,222,1) 4
     width: auto;
     padding-bottom: 0;
   }
+  .non-featured {
+    padding-right: 0;
+  }
 }
 
 
@@ -543,6 +551,7 @@ background: linear-gradient(90deg, rgba(196,222,208,1) 0%, rgba(212,233,222,1) 4
 
 }
 
+
 .bsvtext {
   padding: 2em 0;
   display: flex;
@@ -550,9 +559,10 @@ background: linear-gradient(90deg, rgba(196,222,208,1) 0%, rgba(212,233,222,1) 4
 
 }
 
-.bsvtext h3 {
-  border-bottom: 2px solid #226841;
-  width: 8em;
+
+.bsvtext.selling h3{
+  margin-right: 3.59375em;
+
 }
 
 .bsvtext.selling {

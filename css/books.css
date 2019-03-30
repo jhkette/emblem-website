@@ -32,3 +32,20 @@
     color: #1a1a1a;
     text-decoration: none;
 }
+.authors{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.authorimage{
+    width: 15rem;
+    height: 15rem;
+    background-image: url('../images/books/oscar_wilde.jpeg');
+    margin-left: 2em;
+    border: 1px solid red;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
