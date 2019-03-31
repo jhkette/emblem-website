@@ -8,14 +8,16 @@
     padding: 1em 0 3em 0;
     justify-content: space-between;
 }
+
 .books-intro {
-    margin-top: 3.5em;
-    flex-basis: 30%;
+    margin-top: 1.5em;
+    flex-basis: 48%;
 }
 
-.books-intro h2{
+.books-intro h2 {
     font-size: 1.8em;
     text-transform: uppercase;
+    border-bottom: 1px solid #1a1a1a;
 }
 
 /* side navigation */
@@ -25,42 +27,140 @@
     margin: auto;
 }
 
+.breadcrumbs{
+    width: 90%;
+    margin: auto;
+}
+.breadcrumbs ul{
+    list-style: none;
+    font-size: .95em;
+}
+
+.breadcrumbs li {
+    width: auto;
+    /* padding: 0 .8em .3em .8em; */
+    margin-right: 1em;
+    display: inline-block;
+    font-weight: 100;
+}
+.breadcrumbs li a{
+    color: #236841;
+}
+
 .sidenav ul {
-    margin-top: 3em;
+    font-family: 'Crimson Text', Georgia, serif;
+    margin-top: 2em;
+    margin-bottom: 2em;
     list-style: none;
     font-size: 1.1em;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1a1a1a;
+    /* border-top: 1px solid #1a1a1a; */
+
 }
 
 .sidenav li {
     width: auto;
-    padding-top: .8em;
-    border-bottom: solid 1px #ddd;
-    margin-right: 3em;
+    padding: 0 .5em .2em .5em;
+    margin-right: 1em;
     display: inline-block;
+    font-weight: 100;
 }
 
 .sidenav li a {
     color: #1a1a1a;
     text-decoration: none;
 }
-.authors{
-    width: 60%;
-    margin-top: 3.5em;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: flex-start;
-   
+
+.sidenav li a:hover {
+    color: #236841;
 }
 
-.authorimage{
-    width: 15em;
-    height: 15em;
-    background-image: url('../images/books/oscar_wilde.jpeg');
-    margin-left: 2em;
-    border: 1px solid red;
+.authors {
+    width: 50%;
+    margin-top: 3.5em;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
+
+.parentauthor {
+    width: 16em;
+    height: 16em;
+    margin: auto;
+    overflow: hidden;
+    margin: 0 .5em 1em .5em;
+
+}
+
+.authorimage {
+
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 3em;
+    position: relative;
+    transition: all .5s;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
 
+}
+
+
+
+.authorimage:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(145, 180, 162, 0.897);
+}
+
+.parentauthor:hover .authorimage:before,
+.parentauthor:focus .authorimage:before {
+    display: block;
+}
+
+
+.parentauthor a {
+    color: white;
+    /* Good thing we set a fallback color! */
+    font-family: sans-serif;
+    padding: 25%;
+    position: absolute;
+    display: none;
+}
+
+.parentauthor:hover a,
+.parentauthor:focus a {
+    display: block;
+}
+
+.parentauthor:hover .authorimage {
+    transform: scale(1.2);
+}
+
+.authorimage.one {
+    background-image: url('../images/books/percy_shelly.jpeg');
+}
+
+.authorimage.two {
+    background-image: url('../images/books/charlotte_bronte.jpeg');
+}
+
+.authorimage.three {
+    background-image: url('../images/books/virginia_woolf.jpg');
+}
+
+.authorimage.four {
+    background-image: url('../images/books/rare.jpg');
+}
+
+.extra {
+    width: 90%;
+    margin: auto;
 }

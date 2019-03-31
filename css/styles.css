@@ -1,11 +1,10 @@
 /* import font */
 @font-face {
   font-family: Parisr;
-  src: url('../fonts/parisr.woff'),
-    url('../fonts/parisr.eot?#iefix'),
-    url('../fonts/parisr.eot'),
-    url('../fonts/parisr.ttf'),
-    url('../fonts/parisr.svg');
+  src: url('../fonts/parisr.woff') format("woff"),
+    url('../fonts/parisr.eot?#iefix') format("embedded-opentype"),
+    url('../fonts/parisr.ttf') format("truetype"),
+    url('../fonts/parisr.svg') format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,6 +15,11 @@
   padding: 0;
   margin: 0;
 }
+
+section, article, header, footer, nav, aside, main {
+  display: block; 
+}
+  
 
 /* set font-size to 100% */
 html {
@@ -107,7 +111,7 @@ p {
 }
 
 .commonlinkscontainer {
-  background-color: #ddd;
+  border-bottom: 1px solid #ddd;
 
   height: 1.55em;
   width: 100%;
@@ -163,7 +167,9 @@ p {
   list-style: none;
   display: inline-block;
   font-size: 1.2em;
-  font-weight: 500;
+  font-weight: 100;
+  font-family: 'Crimson Text', Georgia, serif;
+  text-transform: uppercase;
 }
 
 .nav-links a {
@@ -173,12 +179,12 @@ p {
 }
 
 .nav-links a:hover {
-  border-bottom: 4px solid #226841;
+  border-bottom: 2px solid #226841;
   transition-duration: .1s;
 }
 
 #current {
-  border-bottom: 4px solid #226841;
+  border-bottom: 2px solid #226841;
 }
 
 /* MEDAI QUERIES FOR HEADER/NAVIGATION */
@@ -240,8 +246,8 @@ p {
 /* lead image */
 
 .leadimage {
-  height: 32em;
-  background-image: url('../images/home/bookslead.jpg');
+  height: 33em;
+  background-image: url('../images/home/book3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -256,7 +262,7 @@ p {
   margin: auto;
 }
 
-.leadimage:before {
+/* .leadimage:before {
   content: '';
   position: absolute;
   top: 0;
@@ -265,7 +271,7 @@ p {
   left: 0;
   background: linear-gradient(45deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
   opacity: .6;
-}
+} */
 
 .main-button {
   border: 1px solid #1a1a1a;
@@ -334,6 +340,10 @@ main {
   width: 480px;
 }
 
+video {
+  display: block;
+}
+
 
 
 .parentimage {
@@ -390,7 +400,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(35, 104, 65, 0.85);
+  background-color: rgba(145, 180, 162, 0.897);
 }
 
 .parentimage:hover .colimage:before,
@@ -426,16 +436,16 @@ main {
 
 
   .parentimage {
-    width: 400px;
+    width: 25em;
     margin: auto;
-    height: 300px;
+    height: 18.75em;
   }
 
   .center {
-    width: 400px;
+    width: 25em;
     margin: auto;
   }
-
+  /* video needs to be smaller on smaller screens - otherwise width is defined in html  */
   video {
     width: 400px;
     height: 300px;
@@ -451,7 +461,7 @@ main {
   font-family: 'Crimson Text';
 }
 
-.bookscontainer {
+.highlightcontainer {
   background: rgb(196, 222, 208);
   background: linear-gradient(90deg, rgba(196, 222, 208, 1) 0%, rgba(212, 233, 222, 1) 47%, rgba(231, 249, 243, 1) 100%);
   padding: 3em 0 2em 0;
