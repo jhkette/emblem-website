@@ -1,8 +1,16 @@
 /* Book page css */
-
+.container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1em 0 3em 0;
+    justify-content: space-between;
+}
 .books-intro {
     margin-top: 3.5em;
-    flex-basis: 66%;
+    flex-basis: 30%;
 }
 
 .books-intro h2{
@@ -13,7 +21,8 @@
 /* side navigation */
 
 .sidenav {
-    flex-basis: 33%;
+    width: 90%;
+    margin: auto;
 }
 
 .sidenav ul {
@@ -23,9 +32,11 @@
 }
 
 .sidenav li {
+    width: auto;
     padding-top: .8em;
     border-bottom: solid 1px #ddd;
     margin-right: 3em;
+    display: inline-block;
 }
 
 .sidenav li a {
@@ -33,19 +44,23 @@
     text-decoration: none;
 }
 .authors{
-    width: 90%;
-    margin: auto;
+    width: 60%;
+    margin-top: 3.5em;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: flex-start;
+   
 }
 
 .authorimage{
-    width: 15rem;
-    height: 15rem;
+    width: 15em;
+    height: 15em;
     background-image: url('../images/books/oscar_wilde.jpeg');
     margin-left: 2em;
     border: 1px solid red;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 3em;
 
 }

@@ -80,7 +80,7 @@ p {
 
 .leadimage p {
   line-height: 1em;
-  width: 50%;
+ 
   color: #1a1a1a;
   margin: .5em 0 .4em 0em;
   font-size: 1.2em;
@@ -356,9 +356,7 @@ main {
 
 #about {
   background-image: url('../books600.jpg');
-
 }
-
 #book {
 
   background-image: url('../gatsby.jpg');
