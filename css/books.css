@@ -1,4 +1,6 @@
 /* Book page css */
+
+/* Main containers to divide page */
 .container {
     width: 90%;
     margin: auto;
@@ -14,64 +16,23 @@
     flex-basis: 48%;
 }
 
+.authors {
+    flex-basis: 50%;
+    margin-top: 3.82em;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+}
 
 
-/* side navigation */
+/*---------------- side navigation -------------*/
 
 .sidenav {
     width: 90%;
     margin: auto;
 }
-
-.breadcrumbs {
-    width: 90%;
-    margin: auto;
-}
-
-.breadcrumbs ul {
-    margin-top: 1.5em;
-    list-style: none;
-    font-size: .95em;
-}
-
-.breadcrumbs li {
-    width: auto;
-    /* padding: 0 .8em .3em .8em; */
-    margin-right: 1em;
-    display: inline-block;
-    font-weight: 100;
-}
-
-.breadcrumbs li a {
-    color: #236841;
-    text-decoration: none;
-}
-
-.breadcrumbs li a:hover, a:focus {
-    color: #236841;
-    text-decoration: underline;
-}
-
-#currentpage {
-    text-decoration: underline;
-    font-weight: 900;
-}
-
-
-i {
-    border: solid black;
-    border-width: 0 1px 1px 0;
-    display: inline-block;
-    padding: 3.5px;
-    margin-left: 5px;
-}
-
-.right {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}
-
-
 
 .sidenav ul {
     font-family: 'Crimson Text', Georgia, serif;
@@ -101,17 +62,25 @@ i {
 
 .sidenav li a:hover, a:focus {
     color: #236841;
+    text-decoration: none;
+    border: 0;
+}
+#currentpage {
+    text-decoration: underline;
+    font-weight: 900;
 }
 
-.authors {
-    flex-basis: 50%;
-    margin-top: 3.82em;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    align-content: flex-start;
-
+/* Media quries for side navigation */
+@media (max-width:660px) {
+    .sidenav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .sidenav li{
+        margin-bottom: .5em;
+    }
 }
+
 
 .author-flex{
     display: flex;
@@ -230,12 +199,21 @@ i {
     .books-intro{
         flex-basis: 100%;
     }
+    .extra{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .extra p, h3 {
+        margin-right: 0;
+    }
 }
 
 @media (max-width:600px) {
     .author-flex{
       justify-content: center;
     }
+    
   }
 
 #page {
