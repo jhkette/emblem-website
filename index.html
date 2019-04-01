@@ -5,204 +5,211 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans|Source+Sans+Pro');
+    </style>
     <!--[if lt IE 9]>
     <script src="./js/html5shiv.js"></script> 
     <![endif]-->
     <link rel="stylesheet" href="./css/styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans|Source+Sans+Pro');
-    </style>
+
     <title>Document</title>
 </head>
-    <body>
-        <header class="mainheader" role="banner">
-            <div class="skiplink">
-                <a href="#content" title="Go to main content of
-                page">Skip to main content</a>
-            </div>    
-            <div class="commonlinkscontainer">
-                <nav class="commonlinks" role="navigation">
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Accessibility</a></li>
-                        <li><a href="#">Login</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="logonav">
-                <div class="nav-header">
-                    <div class="logo"></div>
-                    <h1>Emblem <span class="smaller">Collective Books</span></h1>
-                </div>
-                <nav role="navigation">
-                    <ul class="nav-links">
-                        <li><a href="#" id="current">Home</a></li>
-                        <li><a href="books.html" target="_blank">Books</a></li>
-                        <li><a href="#">Delivery</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Books as an investment</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
 
-        <div class="leadimage" role="banner">
-            <!-- https://pixabay.com/photos/book-read-old-literature-pages-1659717/ -->
-            <div class="positiontext">
+<body>
+    <header class="mainheader" role="banner">
+        <div class="skiplink">
+            <a href="#content" title="Go to main content of
+                page">Skip to main content</a>
+        </div>
+        <div class="commonlinkscontainer">
+            <nav class="commonlinks" role="navigation">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logonav">
+            <div class="nav-header">
+                <div class="logo"></div>
+                <h1>Emblem <span class="smaller">Collective Books</span></h1>
+            </div>
+            <nav role="navigation">
+                <ul class="nav-links">
+                    <li><a href="#" id="current">Home</a></li>
+                    <li><a href="books.html" target="_blank">Books</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Books as an investment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="leadimage" role="banner">
+        <!-- https://pixabay.com/photos/book-read-old-literature-pages-1659717/ -->
+        <div class="positiontext">
             <div class="heading-text">
                 <h2> Consequatur rerum amet fuga</h2>
                 <p>Lorem ipsum dolor sit amet consectetur.</p>
                 <button class="main-button">A link</button>
             </div>
         </div>
+    </div>
+    <main role="main" id="content">
+        <div class="intro-container">
+            <section class="intro-col lead">
+                <h3>Our Warehouse</h3>
+                <div class="center">
+                    <video  width="480" height="360" controls
+                        poster="./images/logos/emblem_logo.png" preload="metadata" aria-describedby="v1">
+                        <source src="./video/emblem_video.webm" type="video/webm"/>
+                        <source src="./video/emblem_video.mp4" type="video/mp4"/>
+                        <source src="./video/emblem_video.ogg" type="video/ogg"/>
+                        <p>Sorry, your browser does not support video.
+                    </video>
+                </div>
+                <p id="v1">This video shows our warehouse. We have a large warehouse in East London that we use to store our collection. All orders
+                    are processed within a one working day and sent for dispatch. </p>
+
+            </section>
+            <section class="intro-col">
+                <h3>About us</h3>
+                <div class="parentimage">
+                    <div class="colimage" id="about">
+                        <h4 class="abouttext">Lorum ipsum lorum ipusm </h4>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec molestie odio, ut euismod
+                    purus. Donec ut sapien odio. In hac habitasse platea dictumst.
+                    Curabitur vitae diam at ante consectetur mattis vitae ac tortor.</p>
+
+            </section>
+            <section class="intro-col">
+                <h3>About us</h3>
+                <div class="parentimage">
+                    <div class="colimage" id="book">
+                        <h4 class="abouttext">Lorum ipsum lorum ipusm </h4>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec molestie odio, ut euismod
+                    purus. Donec ut sapien odio. In hac habitasse platea dictumst.
+                    Curabitur vitae diam at ante consectetur mattis vitae ac tortor.</p>
+            </section>
         </div>
-        <main role="main" id="content">
-            <div class="intro-container">
-                <section class="intro-col lead">
-                    <h3>Our Warehouse</h3>
-                    <div class="center">
-                        <video src="./video/emblem_video.webm" width="480" height="360" controls
-                            poster="./images/logos/emblem_logo.png" preload="metadata" aria-describedby="v1"></video>
+        <div class="highlightcontainer">
+            <section class="books">
+                <h3>Featured Books</h3>
+                <article class="booklist feature">
+                    <figure>
+                        <img src="./images/home/heartmatter.png" alt="The Heart of the Matter by Graham Greene">
+                    </figure>
+                    <div class="background"></div>
+                    <div class="booktext">
+                        <h4>The Heart of the Matter <span>Graham Greene</span></h4>
+                        <p>1900 copy. One of only 50 published in this edition. Excellent condition in its original blue
+                            cloth with publisher’s device stamped on cover. This book represents an excellent
+                            investment, and is expected to
+                            appreciate in value by 6% over the next three years.</p>
                     </div>
-                    <p id="v1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec molestie odio, ut
-                        euismod purus. Donec ut sapien odio. In hac habitasse platea dictumst.
-                        Curabitur vitae diam at ante consectetur mattis vitae ac tortor.</p>
-
-                </section>
-                <section class="intro-col">
-                    <h3>About us</h3>
-                    <div class="parentimage">
-                        <div class="colimage" id="about">
-
-                            <h4 class="abouttext">Lorum ipsum lorum ipusm </h4>
-
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec molestie odio, ut euismod
-                        purus. Donec ut sapien odio. In hac habitasse platea dictumst.
-                        Curabitur vitae diam at ante consectetur mattis vitae ac tortor.</p>
-
-                </section>
-                <section class="intro-col">
-                    <h3>About us</h3>
-                    <div class="parentimage">
-                        <div class="colimage" id="book">
-                            <h4 class="abouttext">Lorum ipsum lorum ipusm </h4>
-                        </div>
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec molestie odio, ut euismod
-                        purus. Donec ut sapien odio. In hac habitasse platea dictumst.
-                        Curabitur vitae diam at ante consectetur mattis vitae ac tortor.</p>
-                </section>
-            </div>
-            <div class="highlightcontainer">
-                <section class="books">
-                    <h3>Featured Books</h3>
-                    <article class="booklist feature">
+                </article>
+                <div class="booklist">
+                    <article class="non-featured">
                         <figure>
-                            <img src="./images/home/heartmatter.png">
+                            <img src="./images/home/joyce.png" alt="Ulysses by James Joyce">
                         </figure>
-                        <div class="background"></div>
-                        <div class="booktext">
-                            <h4>The Heart of the Matter <span>Graham Greene</span></h4>
-                            <p>1900 copy. One of only 50 published in this edition. Excellent condition in its original blue
-                                cloth with publisher’s device stamped on cover. This book represents an excellent
-                                investment, and is expected to
-                                appreciate in value by 6% over the next three years.</p>
+
+                        <div>
+                            <h4>Ulysses <span>James Joyce</span></h4>
+                            <p>Ulysses is a modernist novel by Irish writer James Joyce. This is an early edition from
+                                the 1930s. </p>
                         </div>
                     </article>
-                    <div class="booklist">
-                        <article class="non-featured">
-                            <figure>
-                                <img src="./images/home/joyce.png">
-                            </figure>
-
-                            <div>
-                                <h4>Ulysses <span>James Joyce</span></h4>
-                                <p>Ulysses is a modernist novel by Irish writer James Joyce. This is an early edition from
-                                    the 1930s. </p>
-                            </div>
-                        </article>
-                        <article class="non-featured">
-                            <figure>
-                                <img src="./images/home/rumour.png">
-                            </figure>
-                            <div>
-                                <h4>Rumour at NightFall <span>Graham Greene</span></h4>
-                                <p>Rumour at Nightfall is the third novel by Graham Greene, published in 1931. This is a
-                                    first edition.</p>
-                            </div>
-                        </article>
-                    </div>
-                </section>
-            </div>
-            <div class="container-secondary">
-                <section class="bsvtext selling">
-                    <div class="text">
-                        <h3>Selling Books</h3>
-                        <p>If you possess books you wish to sell then a formal valuation the most appropriate course of
-                            action. Emblem undertakes written valuations for insurance purposes or personal interest. We can
-                            appraise a single books or collections.
-                            If you wish to have a book valued, a free initial verbal assessment of whether the book is
-                            likely to have su!cient value to merit a full valuation is recommended. If you decide to go
-                            ahead with the valuation, Emblem will provide you with an estimate of the cost before the
-                            valuation is carried out in full.
-                            Fees for valuation work are charged at a half day rate of £300.
-                        </p>
-                        <a href="/" class="main-button dark">A link</a>
-
-                    </div>
-                    <figure>
-                        <img src="./images/home/oldbooks.jpg">
-                    </figure>
-                </section>
-                <section class="bsvtext valuing">
-                    <figure>
-                        <img src="./images/home/charlie.jpg">
-                    </figure>
-                    <div class="text">
-                        <h3>Valuing Books</h3>
-                        <p>If you possess books you wish to sell then a formal valuation the most appropriate course of
-                            action. Emblem undertakes written valuations for insurance purposes or personal interest. We can
-                            appraise a single books or collections.
-                            If you wish to have a book valued, a free initial verbal assessment of whether the book is
-                            likely to have sufficient value to merit a full valuation is recommended. If you decide to go
-                            ahead with the valuation, Emblem will provide you with an estimate of the cost before the
-                            valuation is carried out in full. Fees for valuation work are charged at a half day rate of
-                            £300.
-
-                        </p>
-                    </div>
-                </section>
-                <section class="bsvtext selling">
-                    <div class="text">
-                        <h3>Buying books</h3>
-                        <p>Emblem are always looking to buy rare books. We offer very competitive prices for appropriate
-                            books. All you need to do is contact us with details of the book or collection you are looking
-                            to sell. We will need to know the following information,
-
-                            Author.
-                            Title (exactly as it appears on the title page).
-                            Publisher and publication date.
-                            Edition (if known).
-                            Brief description of the binding (cloth boards, leather-bound, with or lacking dustwrapper).
-                            Description of the overall condition of the book, including any major defects.
-                            If the book meets our requirements, we will contact you for more details.
-
-                        </p>
-                        <a href="/" class="main-button dark">A link</a>
-                    </div>
-                    <figure>
-                        <img src="./images/home/byron.jpg">
-                    </figure>
-                </section>
-
-
-            </div>
-        </main>
-        <div class="footercontainer">
-            <footer role="contentinfo"></footer>
+                    <article class="non-featured">
+                        <figure>
+                            <img src="./images/home/rumour.png" alt=">Rumour at NightFall by Graham Greene">
+                        </figure>
+                        <div>
+                            <h4>Rumour at NightFall <span>Graham Greene</span></h4>
+                            <p>Rumour at Nightfall is the third novel by Graham Greene, published in 1931. This is a
+                                first edition.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </div>
-    </body>
+        <div class="container-secondary">
+            <section class="bsvtext selling">
+                <div class="text">
+                    <h3>Selling Books</h3>
+                    <p>If you possess books you wish to sell then a formal valuation the most appropriate course of
+                        action. Emblem undertakes written valuations for insurance purposes or personal interest. We can
+                        appraise a single books or collections.
+                        If you wish to have a book valued, a free initial verbal assessment of whether the book is
+                        likely to have su!cient value to merit a full valuation is recommended. If you decide to go
+                        ahead with the valuation, Emblem will provide you with an estimate of the cost before the
+                        valuation is carried out in full.
+                        Fees for valuation work are charged at a half day rate of £300.
+                    </p>
+                    <a href="/" class="main-button dark">A link</a>
+                </div>
+                <figure>
+                    <img src="./images/home/oldbooks.jpg" alt="Some vintage books">
+                    <!-- CC from Flickr https://www.flickr.com/groups/67078055@N00/ -->
+                </figure>
+            </section>
+            <section class="bsvtext valuing">
+                <figure>
+                    <img src="./images/home/charlie.jpg" alt="Charlie and the Chocolate Factory by Roald Dahl">
+                    <figcaption>Charlie and the Chocolate Factory by Roald Dahl</figcaption>
+                </figure>
+                <div class="text">
+                    <h3>Valuing Books</h3>
+                    <p>If you possess books you wish to sell then a formal valuation the most appropriate course of
+                        action. Emblem undertakes written valuations for insurance purposes or personal interest. We can
+                        appraise a single books or collections.
+                        If you wish to have a book valued, a free initial verbal assessment of whether the book is
+                        likely to have sufficient value to merit a full valuation is recommended. If you decide to go
+                        ahead with the valuation, Emblem will provide you with an estimate of the cost before the
+                        valuation is carried out in full. Fees for valuation work are charged at a half day rate of
+                        £300.
+
+                    </p>
+                </div>
+            </section>
+            <section class="bsvtext selling">
+                <div class="text">
+                    <h3>Buying books</h3>
+                    <p>Emblem are always looking to buy rare books. We offer very competitive prices for appropriate
+                        books. All you need to do is contact us with details of the book or collection you are looking
+                        to sell. We will need to know the following information,
+
+                        Author.
+                        Title (exactly as it appears on the title page).
+                        Publisher and publication date.
+                        Edition (if known).
+                        Brief description of the binding (cloth boards, leather-bound, with or lacking dustwrapper).
+                        Description of the overall condition of the book, including any major defects.
+                        If the book meets our requirements, we will contact you for more details.
+
+                    </p>
+                    <a href="/" class="main-button dark">A link</a>
+                </div>
+                <figure>
+                    <img src="./images/home/byron.jpg">
+                    <!-- CC from pxhere https://pxhere.com/en/photo/1457081 -->
+                    <figcaption>Books by Byron and Tennyson</figcaption>
+                </figure>
+            </section>
+
+
+        </div>
+    </main>
+    <div class="footercontainer">
+        <footer role="contentinfo"></footer>
+    </div>
+</body>
 
 </html>
