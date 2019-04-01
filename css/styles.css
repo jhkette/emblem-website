@@ -256,7 +256,7 @@ i {
 }
 
 .nav-links a:hover, a:focus {
-  border-bottom: 2px solid #226841;
+  color: #226841;
   transition-duration: .1s;
  
 }

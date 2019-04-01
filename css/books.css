@@ -49,7 +49,7 @@
 
 .sidenav li {
     width: auto;
-    padding: 0 .5em .2em .5em;
+    padding: 0 .2em .2em .2em;
     margin-right: 1em;
     display: inline-block;
     font-weight: 100;
@@ -238,13 +238,17 @@
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    padding-bottom: 7em;
 }
+
 
 .item {
     width: 24em;
-    border: 1px solid red;
+    border-top: 1px solid #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
     margin-right: 2em;
     margin-bottom: 2em;
+    padding: 1.5em 0;
 }
 
 .item dt, dd {
@@ -266,4 +270,15 @@
 .item figure{
     margin-bottom: 3em;
     
+}
+
+@media (max-width:1024px) {
+    .bookcatalogue {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
 }
