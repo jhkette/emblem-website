@@ -441,11 +441,11 @@ video {
 }
 
 #about {
-  background-image: url('../images/home/wuthering.jpg');
+  background-image: url('../images/home/bookslead.jpg');
   background-position: center;
 }
 #book {
-  background-image: url('../gatsby.jpg');
+  background-image: url('../images/home/stevenson.jpg');
   
 }
 
@@ -506,7 +506,15 @@ video {
     width: 100%;
     margin: 1em auto;
   }
-
+  #about {
+    background-image: url('../images/home/bookslead400.jpg');
+    background-position: center;
+  }
+  #book {
+    background-image: url('../images/home/stevenson400.jpg');
+    
+  }
+  
 
   .parentimage {
     width: 25em;

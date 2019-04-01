@@ -173,23 +173,25 @@
     width: 90%;
     margin: auto;
     align-items: center;
+    padding-bottom: 1.5em;
 }
 
 .extra p {
-
     margin-right: 5em;
 
 }
 
 .extra h3 {
     margin-right: 3.59375em;
-
 }
 
 .extra img {
     display: block;
     width: 15em;
+    
 }
+
+
 
 @media (max-width:1024px) {
     .authors {
@@ -221,6 +223,7 @@
     font-weight: bold;
 }
 
+/* ----------------------19th Century Books------------------------------------------- */
 
 .nineteenthintro {
     width: 90%;
@@ -233,11 +236,34 @@
     width: 90%;
     margin: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
-.bookitem {
-    width: 25em;
+.item {
+    width: 24em;
+    border: 1px solid red;
+    margin-right: 2em;
+    margin-bottom: 2em;
 }
 
+.item dt, dd {
+    display: block;
+    float: left;
+    font-size: 1.1em;
+    margin-bottom: .5em;
+}
+
+.item dt { 
+    clear:both; 
+    font-weight: 900;
+    margin-right: .5em;
+    color: #236841;
+    
+}
+
+
+.item figure{
+    margin-bottom: 3em;
+    
+}
