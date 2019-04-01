@@ -14,11 +14,7 @@
     flex-basis: 48%;
 }
 
-.books-intro h2 {
-    font-size: 1.8em;
-    text-transform: uppercase;
-    border-bottom: 1px solid #1a1a1a;
-}
+
 
 /* side navigation */
 
@@ -106,7 +102,7 @@ i {
 
 .authors {
     width: 50%;
-    margin-top: 3.5em;
+    margin-top: 3.82em;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
@@ -193,6 +189,35 @@ i {
 }
 
 .extra {
+    display: flex;
+    justify-content: space-between;
     width: 90%;
     margin: auto;
+}
+
+.extra p {
+  
+    margin-right: 5em;
+   
+}
+.extra h3 {
+   margin-right: 3.59375em;
+   
+}
+
+.extra img {
+    display: block;
+    width: 15em;
+}
+
+
+#page{
+    color: #236841;
+    font-weight: bold;
+}
+
+.nineteenthintro{
+    width: 90%;
+    margin: auto;
+    padding: 1.5em 0 3em 0;
 }

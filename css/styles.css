@@ -49,6 +49,12 @@ h2 {
 
 }
 
+.intro  {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #1a1a1a;
+}
+
 h3 {
   font-size: 1.6em;
   margin: .5em 0 1em 0;
@@ -71,6 +77,11 @@ p {
   margin: 1em 0;
   line-height: 1.6em;
   font-weight: 500;
+}
+
+p a{
+  color:#236841;
+  font-weight: 900;
 }
 
 .leadimage h2 {
@@ -566,6 +577,9 @@ video {
   padding: 2em 0;
   display: flex;
   justify-content: space-between;
+  width: 90%;
+  margin: auto;
+
 
 }
 
@@ -575,9 +589,6 @@ video {
 
 }
 
-.bsvtext.selling {
-  padding-left: 5%;
-}
 
 .bsvtext.selling p {
   margin-right: 5em;
@@ -598,11 +609,6 @@ video {
   margin-top: 3em;
 }
 
-.bsvtext.valuing {
-
-  padding-right: 5%;
-  padding-left: 0;
-}
 
 
 @media (max-width:960px) {
