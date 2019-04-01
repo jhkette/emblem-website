@@ -23,11 +23,12 @@
     margin: auto;
 }
 
-.breadcrumbs{
+.breadcrumbs {
     width: 90%;
     margin: auto;
 }
-.breadcrumbs ul{
+
+.breadcrumbs ul {
     margin-top: 1.5em;
     list-style: none;
     font-size: .95em;
@@ -40,16 +41,18 @@
     display: inline-block;
     font-weight: 100;
 }
-.breadcrumbs li a{
+
+.breadcrumbs li a {
     color: #236841;
     text-decoration: none;
 }
-.breadcrumbs li a:hover{
+
+.breadcrumbs li a:hover, a:focus {
     color: #236841;
     text-decoration: underline;
 }
 
-#currentpage{
+#currentpage {
     text-decoration: underline;
     font-weight: 900;
 }
@@ -61,12 +64,12 @@ i {
     display: inline-block;
     padding: 3.5px;
     margin-left: 5px;
-  }
-  
-  .right {
+}
+
+.right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-  }
+}
 
 
 
@@ -96,18 +99,24 @@ i {
     text-decoration: none;
 }
 
-.sidenav li a:hover {
+.sidenav li a:hover, a:focus {
     color: #236841;
 }
 
 .authors {
-    width: 50%;
+    flex-basis: 50%;
     margin-top: 3.82em;
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
     align-content: flex-start;
 
+}
+
+.author-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 .parentauthor {
@@ -150,13 +159,14 @@ i {
 }
 
 
-.parentauthor span {   
+.parentauthor span {
     padding: 33%;
     position: absolute;
     display: none;
 }
-.parentauthor span a{
-    text-decoration: none; 
+
+.parentauthor span a {
+    text-decoration: none;
     color: white;
     font-family: 'Crimson Text', Georgia, serif;
     font-size: 2em;
@@ -193,16 +203,18 @@ i {
     justify-content: space-between;
     width: 90%;
     margin: auto;
+    align-items: center;
 }
 
 .extra p {
-  
+
     margin-right: 5em;
-   
+
 }
+
 .extra h3 {
-   margin-right: 3.59375em;
-   
+    margin-right: 3.59375em;
+
 }
 
 .extra img {
@@ -210,14 +222,44 @@ i {
     width: 15em;
 }
 
+@media (max-width:1024px) {
+    .authors {
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    .books-intro{
+        flex-basis: 100%;
+    }
+}
 
-#page{
+@media (max-width:600px) {
+    .author-flex{
+      justify-content: center;
+    }
+  }
+
+#page {
     color: #236841;
     font-weight: bold;
 }
 
-.nineteenthintro{
+
+.nineteenthintro {
     width: 90%;
     margin: auto;
     padding: 1.5em 0 3em 0;
 }
+
+
+.bookcatalogue {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bookitem {
+    width: 25em;
+}
+

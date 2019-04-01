@@ -17,9 +17,13 @@
 </head>
 
 <body>
-    <header class="mainheader">
+    <header class="mainheader" role="banner">
+            <div class="skiplink">
+                    <a href="#content" title="Go to main content of
+                    page">Skip to main content</a>
+                </div>  
         <div class="commonlinkscontainer">
-            <nav class="commonlinks">
+            <nav class="commonlinks" role="navigation">
                 <ul>
                     <li><a href="#">Contact Us</a></li>
                     <li><a href="#">Accessibility</a></li>
@@ -32,7 +36,7 @@
                 <div class="logo"></div>
                 <h1>Emblem <span class="smaller">Collective Books</span></h1>
             </div>
-            <nav>
+            <nav role="navigation">
                 <ul class="nav-links">
                     <li><a href="/">Home</a></li>
                     <li><a href="#" id="current">Books</a></li>
@@ -44,39 +48,70 @@
         </div>
     </header>
 
-    <main>
-            <nav class="breadcrumbs">
-                    <ul>
-                        <li><a href="/">Home</a><i class="arrow right"></i></li>
-                        <li><a href="/books.html">Books</a><i class="arrow right"></i></li>
-                        <li><a href="#" id="currentpage">Nineteenth century</a><i class="arrow right"></i></li>
-                     
-                       
-        
-                    </ul>
-            </nav>
-        <nav class="sidenav">
+   
+        <nav class="breadcrumbs" role="navigation">
+            <ul>
+                <li><a href="/">Home</a><i class="arrow right"></i></li>
+                <li><a href="/books.html">Books</a><i class="arrow right"></i></li>
+                <li><a href="#" id="currentpage">Nineteenth century</a><i class="arrow right"></i></li>
+
+
+
+            </ul>
+        </nav>
+        <nav class="sidenav" role="navigation">
             <ul>
                 <li><a href="#">18th Century</a> </li>
-                <li><a href="nineteenthcentury.html" id ="page">19th Century</a></li>
+                <li><a href="nineteenthcentury.html" id="page">19th Century</a></li>
                 <li><a href="#">20th Century</a></li>
                 <li><a href="#">Rare books</a></li>
 
             </ul>
         </nav>
-      
-     <main>
-         <section class="nineteenthintro">
-             <h2 class="intro">19th Century Books</h2>
-                <p>Our catalogue provides a list of 19th Century books we currently hold in stock. 
-                However, if there is an item that you cannot find here, please feel free to contact us, as we are often able to secure books on demand. </p>
-                </section> 
+
+        <main role="main" id="content">
+            <section class="nineteenthintro">
+                <h2 class="intro">19th Century Books</h2>
+                <p>Our catalogue provides a list of 19th Century books we currently hold in stock.
+                    However, if there is an item that you cannot find here, please feel free to contact us, as we are
+                    often able to secure books on demand. </p>
+            </section>
+
+            <div class="bookcatalogue">
+                <dl class="bookitem">
+                    <dt id="c1">Sales:</dt>
+                    <dd aria-labelledby="c1">0207 123 5555</dd>
+                    <dt id="c2">Customer services:</dt>
+                    <dd aria-labelledby="c2">0207 123 6666</dd>
+                    <dt id="c3">Press office:</dt>
+                    <dd aria-labelledby="c3">0207 123 7777</dd>
+                </dl>
+                <dl class="bookitem">
+                    <dt id="c1">Sales:</dt>
+                    <dd aria-labelledby="c1">0207 123 5555</dd>
+                    <dt id="c2">Customer services:</dt>
+                    <dd aria-labelledby="c2">0207 123 6666</dd>
+                    <dt id="c3">Press office:</dt>
+                    <dd aria-labelledby="c3">0207 123 7777</dd>
+                </dl>
 
 
-    </main>
-    <div class="footercontainer">
-        <footer></footer>
-    </div>
+                <dl class="bookitem">
+                    <dt id="c1">Sales:</dt>
+                    <dd aria-labelledby="c1">0207 123 5555</dd>
+                    <dt id="c2">Customer services:</dt>
+                    <dd aria-labelledby="c2">0207 123 6666</dd>
+                    <dt id="c3">Press office:</dt>
+                    <dd aria-labelledby="c3">0207 123 7777</dd>
+                </dl>
+
+
+
+            </div>
+        </main>
+        <div class="footercontainer">
+            <footer></footer>
+        </div>
 </body>
 
 </html>
