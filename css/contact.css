@@ -1,0 +1,42 @@
+.main-container{
+    width: 90%; 
+    margin: auto;
+}
+
+/*------------ Form styling------- */
+
+form{
+    width: 30em;
+}
+
+fieldset{
+    border: 0;
+}
+
+legend{
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 1.8em;
+}
+
+select {
+    font-size: .9em;
+    width: 12em;
+}
+#title{
+    width: 5em;
+}
+input{
+    width: 25em;
+    height: 2em;
+}
+
+.controlgroup{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    color: gray;
+    font-style: italic;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+}

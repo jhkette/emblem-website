@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans');
+    </style>
+    <!--[if lt IE 9]>
+    <script src="./js/html5shiv.js"></script> 
+    <![endif]-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="mainheader" role="banner">
+        <div class="skiplink">
+            <a href="#content" title="Go to main content of
+                    page">Skip to main content</a>
+        </div>
+        <div class="commonlinkscontainer">
+            <nav class="commonlinks" role="navigation">
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logonav">
+            <div class="nav-header">
+                <div class="logo"></div>
+                <h1>Emblem <span class="smaller">Collectible Books</span></h1>
+            </div>
+            <nav role="navigation">
+                <ul class="nav-links">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="books.html">Books</a></li>
+                    <li><a href="#">Delivery</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Books as an investment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <nav class="breadcrumbs" role="navigation">
+        <ul>
+            <li><a href="/">Home</a><i class="arrow right"></i></li>
+
+            <li><a href="#" id="currentpage">Contact</a><i class="arrow right"></i></li>
+
+
+
+        </ul>
+    </nav>
+
+    <main role="main" id="content" class="main-container">
+        <form method="POST" action="#">
+            <fieldset>
+                <legend>Contact form</legend>
+                <div class="controlgroup">
+                    <label for="title">Title</label>
+                    <select name="title" id="title">
+
+                        <option value="Mr">Mr</option>
+                        <option value="Mrs">Mrs</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Miss">Miss</option>
+                        <option value="Dr">Dr</option>
+                        <option value="Dr">Prof</option>
+                    </select>
+                </div>
+                <div class="controlgroup">
+                    <label for="name">Your name:</label>
+                    <input required type="text" name="name" id="name">
+                </div>
+
+                <div class="controlgroup">
+                    <label for="email">Email address:</label>
+                    <input required type="email" name="email" id="email">
+                </div>
+                <div class="controlgroup">
+                    <label for="query">Nature of query</label>
+                    <select name="query" id="query">
+                        <option value="Buy books">Buy books</option>
+                        <option value="Sell books">Sell books</option>
+                        <option value="Return a book">Return a book</option>
+                        <option value="Delivery">Delivery</option>
+                        <option value="Complaint">Complaint</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="controlgroup">
+                    <label for="msg">Message</label>
+                    <textarea placeholder="Type your message here..." name="message" id="msg"></textarea>
+                </div>
+                <input type="submit" id="submit" value="Send message">
+            </fieldset>
+        </form>
+
+    </main>
+    <div class="footercontainer">
+        <footer role="contentinfo">
+            <div>
+                <h4>Information</h4>
+                <nav class="footer">
+                    <ul>
+                        <li><a href="#">Our Guarantee</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h4>Social</h4>
+                <nav class="footer">
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h4>Press and Privacy</h4>
+                <nav class="footer">
+                    <ul>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

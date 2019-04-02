@@ -23,7 +23,6 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     align-content: flex-start;
-
 }
 
 
@@ -43,7 +42,6 @@
     text-transform: uppercase;
     border-bottom: 1px solid #1a1a1a;
     display: inline-block;
-    /* border-top: 1px solid #1a1a1a; */
 
 }
 
@@ -81,6 +79,7 @@
     }
 }
 
+/* Author display grid */
 
 .author-flex{
     display: flex;
@@ -167,6 +166,8 @@
     background-image: url('../images/books/rare.jpg');
 }
 
+/* Extra info on 19th cen (an aside) */
+
 .extra {
     display: flex;
     justify-content: space-between;
@@ -178,7 +179,6 @@
 
 .extra p {
     margin-right: 5em;
-
 }
 
 .extra h3 {
@@ -191,7 +191,7 @@
     
 }
 
-
+/* Media queries for author grid and books info - tablet */
 
 @media (max-width:1024px) {
     .authors {
@@ -205,11 +205,12 @@
         flex-direction: column;
         justify-content: center;
     }
-    
     .extra p, h3 {
         margin-right: 0;
     }
 }
+
+/* Media queries for author grid and books info - mobile */
 
 @media (max-width:600px) {
     .author-flex{
@@ -269,10 +270,10 @@
 
 
 .item figure{
-    margin-bottom: 3em;
-    
+    margin-bottom: 3em;  
 }
 
+/* Book catalogue media queries - tablet and mobile */
 @media (max-width:1024px) {
     .bookcatalogue {
         width: 90%;
