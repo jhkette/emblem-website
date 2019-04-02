@@ -15,11 +15,18 @@
   padding: 0;
   margin: 0;
 }
+
 /* display all html5 elements as blocks */
-section, article, header, footer, nav, aside, main {
-  display: block; 
+section,
+article,
+header,
+footer,
+nav,
+aside,
+main {
+  display: block;
 }
-  
+
 
 /* set font-size to 100% */
 html {
@@ -36,13 +43,15 @@ body {
   position: absolute;
   left: -10000px;
 }
+
 .skiplink:focus {
-left: 0;
-background-color: #4c712b; color: #ffff00;
+  left: 0;
+  background-color: #4c712b;
+  color: #ffff00;
 }
 
 
-/* typography */
+/*-----global typography----------------- */
 h1 {
   font-family: 'Parisr';
   font-size: 2.9em;
@@ -57,8 +66,8 @@ h2 {
   font-family: 'Crimson Text', Georgia, serif;
 
 }
-
-.intro  {
+/* H2 heading for every page that isn't the home page */
+.intro {
   font-size: 1.8em;
   text-transform: uppercase;
   border-bottom: 1px solid #1a1a1a;
@@ -82,44 +91,24 @@ h4 {
 
 p {
   font-size: 1.15em;
-  color: #1a1a1a;
   margin: 1em 0;
   line-height: 1.6em;
   font-weight: 500;
 }
 
-figcaption{
+figcaption {
   font-size: .7em;
-  color: #1a1a1a;
   margin-top: .7em;
   font-weight: 500;
   font-style: italic;
 
 }
 
-p a{
-  color:#236841;
+p a {
+  color: #236841;
   font-weight: 900;
 }
 
-
-
-.leadimage h2 {
-
-  color: #1a1a1a;
-  line-height: 1em;
-  margin-top: .6em;
-  font-size: 2.3em;
-  line-height: 1.1em;
-}
-
-.leadimage p {
-  line-height: 1em;
- 
-  color: #1a1a1a;
-  margin: .5em 0 .4em 0em;
-  font-size: 1.2em;
-}
 
 .smaller {
   font-size: .45em;
@@ -157,7 +146,7 @@ p a{
 }
 
 .commonlinks li {
-  font-size: .75em;
+  font-size: .85em;
   padding-left: 1em;
 }
 
@@ -166,10 +155,11 @@ p a{
   text-decoration: none;
 }
 
-.commonlinks li a:hover, a:focus {
+.commonlinks li a:hover,
+a:focus {
   text-decoration: underline;
 }
-
+/*----- Logo styles ------ */
 .logonav {
   display: flex;
   justify-content: flex-start;
@@ -194,7 +184,7 @@ p a{
   margin-right: .2em;
 }
 
-/* breadcrumbs navigation */
+/*--------- breadcrumbs navigation ----------*/
 
 .breadcrumbs {
   width: 90%;
@@ -220,10 +210,12 @@ p a{
   text-decoration: none;
 }
 
-.breadcrumbs li a:hover, a:focus {
+.breadcrumbs li a:hover,
+a:focus {
   color: #236841;
   text-decoration: underline;
 }
+
 /* icon for breadcrumbs */
 i {
   border: solid black;
@@ -238,7 +230,7 @@ i {
   -webkit-transform: rotate(-45deg);
 }
 
-/* main navigation */
+/*--------------- main navigation------------------ */
 
 .nav-links li {
   list-style: none;
@@ -249,33 +241,35 @@ i {
   text-transform: uppercase;
 }
 
-.nav-links li  a {
+.nav-links li a {
   margin: .4em .3em;
   text-decoration: none;
   color: #1a1a1a;
 }
 
-.nav-links a:hover, a:focus {
+.nav-links a:hover,
+a:focus {
   color: #226841;
   transition-duration: .1s;
- 
+
 }
 
 #current {
   border-bottom: 2px solid #226841;
 }
 
-/* MEDAI QUERIES FOR HEADER/NAVIGATION */
+/*Media queries for header navigation - tablet */
 @media (max-width:1024px) {
   .logonav {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .nav-links {
     margin-bottom: 1em;
   }
 }
-
+/*Media queries for header navigation - mobile */
 @media (max-width:660px) {
   nav {
     width: 100%;
@@ -288,7 +282,8 @@ i {
     border-bottom: 1px solid #535353;
   }
 
-  #current:hover ,  #current:focus{
+  #current:hover,
+  #current:focus {
     color: #226841;
   }
 
@@ -311,7 +306,7 @@ i {
     padding-bottom: .2em;
   }
 
-  .nav-links li a:hover  a:focus{
+  .nav-links li a:hover a:focus {
     border-bottom: 1px solid #535353;
     background-color: #ededed;
     color: #226841;
@@ -320,7 +315,7 @@ i {
   }
 }
 
-/* lead image */
+/* ------------------Lead image and  Our Business, Our Books, Invest in Books section ------------------------ */
 
 .leadimage {
   height: 32em;
@@ -331,8 +326,26 @@ i {
   position: relative;
   width: 100%;
   z-index: -1;
-
 }
+
+.leadimage h2 {
+
+  color: #1a1a1a;
+  line-height: 1em;
+  margin-top: .6em;
+  font-size: 2.3em;
+  line-height: 1.1em;
+}
+
+.leadimage p {
+  line-height: 1em;
+
+  color: #1a1a1a;
+  margin: .5em 0 .4em 0em;
+  font-size: 1.2em;
+}
+
+
 
 .positiontext {
   width: 90%;
@@ -347,7 +360,7 @@ i {
   font-size: 1em;
   border-radius: .15em;
   margin-top: .7em;
-  
+
 }
 
 .main-button.dark {
@@ -358,14 +371,16 @@ i {
   margin-top: 2.7em;
 }
 
-.main-button:hover, .main-button:focus  {
+.main-button:hover,
+.main-button:focus {
   background-color: #f5f5f5;
   color: #1a1a1a;
   transition: .3s;
   border: 1px solid #1a1a1a;
 }
 
-.main-button.dark:hover, .main-button.dark:focus{
+.main-button.dark:hover,
+.main-button.dark:focus {
   background-color: #1a1a1a;
   color: #f5f5f5;
   transition: .3s;
@@ -434,9 +449,10 @@ video {
   background-image: url('../images/home/bookslead.jpg');
   background-position: center;
 }
+
 #book {
   background-image: url('../images/home/stevenson.jpg');
-  
+
 }
 
 
@@ -477,9 +493,10 @@ video {
   transform: scale(1.2);
 }
 
+/* Tablet breaking point for lead image and three features - Our Business, Our Books, Invest in Books  */
 @media (max-width:1024px) {
   .heading-text {
-    top: 12.5em;  
+    top: 12.5em;
   }
 
   .intro-container {
@@ -496,16 +513,16 @@ video {
     width: 100%;
     margin: 1em auto;
   }
+
   #about {
     background-image: url('../images/home/bookslead400.jpg');
     background-position: center;
   }
+
   #book {
     background-image: url('../images/home/stevenson400.jpg');
-    
-  }
-  
 
+  }
   .parentimage {
     width: 25em;
     margin: auto;
@@ -516,6 +533,7 @@ video {
     width: 25em;
     margin: auto;
   }
+
   /* video needs to be smaller on smaller screens - otherwise width is defined in html  */
   video {
     width: 400px;
@@ -523,14 +541,31 @@ video {
   }
 
 }
-@media (max-width:660px){
-.heading-text{
-  height: 15em;
-  width: 20em
-}
-.heading-text h2{
-  font-size: 1.3em;
-}
+
+/* Mobile breaking point for lead image and three features - Our Business, Our Books, Invest in Books  */
+@media (max-width:660px) {
+  .heading-text {
+    height: 15em;
+    width: 20em
+  }
+
+  .heading-text h2 {
+    font-size: 1.3em;
+  }
+
+  .center{
+    width: 17.5em;
+
+  }
+  video {
+    width: 280px;
+    height: 210px;
+  }
+
+  .parentimage {
+    width: 17.5em;
+    height: 13.125em;
+  }
 
 }
 
@@ -541,7 +576,7 @@ video {
   font-family: 'Crimson Text', Georgia, serif;
 }
 
-/* Featured book section */
+/*---------------- Featured book section-------------------------- */
 .highlightcontainer {
   background: rgb(196, 222, 208);
   background: linear-gradient(90deg, rgba(196, 222, 208, 1) 0%, rgba(212, 233, 222, 1) 47%, rgba(231, 249, 243, 1) 100%);
@@ -595,7 +630,8 @@ video {
 .books img {
   margin: 1em 2em 0 0;
 }
-/* MEDIA QUERIES FOR FEATURED BOOKS SECTION */
+
+/*  tablet media queries for featured book section*/
 @media (max-width:1024px) {
   .books {
     width: 85%;
@@ -620,27 +656,23 @@ video {
   }
 
 }
-
+ /* Mobile media queries for featured books section */
 @media (max-width:660px) {
-  .non-featured, .booklist.feature {
+
+  .non-featured,
+  .booklist.feature {
     display: flex;
     flex-direction: column;
   }
 }
 
-
-
+/* Buy, Value Sell section */
 
 .container-secondary {
   background-color: #ededed;
   width: 100%;
-
   padding: 4em 0;
-
-
-
 }
-
 
 .bsvtext {
   padding: 2em 0;
@@ -649,25 +681,23 @@ video {
   width: 90%;
   margin: auto;
 }
-.bsvtext ul{
-padding-bottom: 1.5em;
-margin-left: 1.5em;
-margin-right:3em;
+
+.bsvtext ul {
+  padding-bottom: 1.5em;
+  margin-left: 1.5em;
+  margin-right: 3em;
 }
+
 .bsvtext ul li {
   font-size: 1.2em;
   list-style: none;
   padding-bottom: .5em;
-  
+
 }
-
-
 
 .bsvtext.selling h3 {
   margin-right: 2.15625em
-
 }
-
 
 .bsvtext.selling p {
   margin-right: 3em;
@@ -688,7 +718,7 @@ margin-right:3em;
   margin-top: 3em;
 }
 
-
+/* Buy, Value Sell section for both tablet and mobile */
 
 @media (max-width:1024px) {
 
@@ -705,6 +735,7 @@ margin-right:3em;
   .bsvtext.valuing h3 {
     margin-left: 0;
   }
+
   .bsvtext.selling h3 {
     margin-right: 0em;
 
@@ -717,14 +748,13 @@ margin-right:3em;
   .bsvtext.selling p {
     margin: 1em 0;
   }
-
 }
 
-/* Footer styles */
+/* ----------------Footer styles------------------------- */
 .footercontainer {
   border-top: 1px solid #cccccc;
   background-color: #e2e2e2;
- 
+
 }
 
 footer {
@@ -736,12 +766,11 @@ footer {
   flex-wrap: wrap;
 }
 
-footer nav{
+footer nav {
   margin: 0em 6em 0 0;
- 
 }
 
-footer h4{
+footer h4 {
   border-bottom: 1px solid #1a1a1a;
   display: inline-block;
   padding-right: 4em;
@@ -752,27 +781,25 @@ footer nav ul {
   list-style: none;
 }
 
-footer nav ul li{
+footer nav ul li {
   margin: 1em 0;
   padding-bottom: .2em;
-  
-}
 
+}
 footer nav ul li a {
   color: #1a1a1a;
   text-decoration: none;
 }
 
-@media (max-width:1024px) { 
+/* Footer media queries for tablet */
+@media (max-width:1024px) {
   footer {
     justify-content: center;
   }
-
-
 }
 
-
-@media (max-width:660px) { 
+/* Footer media queries for mobile */
+@media (max-width:660px) {
   footer {
     flex-direction: column;
   }
