@@ -409,7 +409,7 @@ main {
 }
 
 .intro-col {
-  width: 17em;
+  width: 20em;
   text-align: left;
   margin-top: 1em;
 }
@@ -423,8 +423,8 @@ video {
 }
 
 .parentimage {
-  width: 17em;
-  height: 14em;
+  width: 20em;
+  height: 15em;
   margin: auto;
   overflow: hidden;
 }
@@ -663,22 +663,22 @@ video {
 
 
 .bsvtext.selling h3 {
-  margin-right: 3.59375em;
+  margin-right: 2.15625em
 
 }
 
 
 .bsvtext.selling p {
-  margin-right: 5em;
+  margin-right: 3em;
   padding-bottom: 1.5em;
 }
 
 .bsvtext.valuing p {
-  margin-left: 5em;
+  margin-left: 3em;
 }
 
 .bsvtext.valuing h3 {
-  margin-left: 3.59375em;
+  margin-left: 2.15625em
 }
 
 .bsv.selling img {

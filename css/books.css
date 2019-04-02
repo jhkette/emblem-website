@@ -243,7 +243,7 @@
 
 
 .item {
-    width: 24em;
+    width: 23em;
     border-top: 1px solid #1a1a1a;
     border-bottom: 1px solid #1a1a1a;
     margin-right: 2em;
@@ -256,6 +256,7 @@
     float: left;
     font-size: 1.1em;
     margin-bottom: .5em;
+    line-height: 1.4em;
 }
 
 .item dt { 
