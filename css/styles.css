@@ -769,6 +769,7 @@ The mobile still takes some css from tablet css above */
   width: 90%;
   max-width: 1400px;
   margin: auto;
+  align-items: flex-start;
 }
 
 .bsvtext ul {
