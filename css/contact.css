@@ -153,4 +153,7 @@ textarea{
     .deliveryinfo{
         width: 90%;
     } 
+    .flexmain{
+        align-items: flex-start;
+    }
 }
