@@ -49,8 +49,20 @@ body {
   background-color: #4c712b;
   color: #ffff00;
 }
+/* Global table styles */
+table, td, th {
+	border: 1px solid #000;
+}
 
+th {
+  font-weight: 900;
+}
 
+table {
+	border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+}
 /*-----global typography----------------- */
 h1 {
   font-family: 'Parisr';
@@ -114,9 +126,10 @@ p a {
   font-size: .45em;
   display: block;
   margin-left: .2em;
+
 }
 
-
+/* header text */
 .mainheader {
   position: relative;
   width: 100%;
@@ -125,6 +138,16 @@ p a {
   z-index: 1;
 }
 
+/* Global container used throughout project */
+.main-container{
+  padding-top: 3em;
+  width: 90%; 
+  margin: auto;
+
+}
+
+
+/* commonlinks */
 .commonlinks {
   width: 90%;
   margin: auto;
@@ -436,6 +459,7 @@ main {
 
 video {
   display: block;
+  width: 100%;
 }
 
 .parentimage {
@@ -540,7 +564,7 @@ video {
     height: 18.75em;
   }
 
-  .center {
+  .centervideo {
     width: 25em;
     margin: auto;
   }
@@ -564,7 +588,7 @@ video {
     font-size: 1.3em;
   }
 
-  .center{
+  .centervideo{
     width: 17.5em;
 
   }

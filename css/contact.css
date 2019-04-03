@@ -2,12 +2,7 @@
 
 /* containers */
 
-.main-container{
-    padding-top: 3em;
-    width: 90%; 
-    margin: auto;
-  
-}
+
 
 .flexmain{
     display: flex;
