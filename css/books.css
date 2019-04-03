@@ -25,7 +25,6 @@
     align-content: flex-start;
 }
 
-
 /*---------------- side navigation -------------*/
 
 .sidenav {
@@ -124,18 +123,22 @@
 
 
 .parentauthor span {
-    padding: 33%;
-    position: absolute;
-    display: none;
+  color: white;
+  font-size: 1.7em;
+  font-family: 'Crimson Text', Georgia, serif;
+  margin: auto;
+  top: 0;
+  left:0;
+  right:0;
+  position:absolute;
+  text-align:center;
+  padding: .4em;
+  margin-top: 2.9em;
+  width: 80%;
+  display: none;
 }
 
-.parentauthor span a {
-    text-decoration: none;
-    color: white;
-    font-family: 'Crimson Text', Georgia, serif;
-    font-size: 2em;
 
-}
 
 .parentauthor:hover span,
 .parentauthor:focus span {
@@ -147,11 +150,11 @@
 }
 
 .authorimage.one {
-    background-image: url('../images/books/percy_shelly.jpeg');
+    background-image: url('../images/books/swift.jpg');
 }
 
 .authorimage.two {
-    background-image: url('../images/books/charlotte_bronte.jpeg');
+    background-image: url('../images/books/percy_shelly.jpeg');
 }
 
 .authorimage.three {
@@ -240,12 +243,13 @@
 
 
 .item {
-    width: 23em;
+    width: 24em;
     border-top: 1px solid #1a1a1a;
     border-bottom: 1px solid #1a1a1a;
-    margin-right: 2em;
+    margin-right: 2.5em;
     margin-bottom: 2em;
     padding: 1.5em 0;
+    
 }
 
 .item dt, dd {
@@ -254,6 +258,8 @@
     font-size: 1.1em;
     margin-bottom: .5em;
     line-height: 1.4em;
+    font-size: 1.1em;
+    line-height: 1.5em;
 }
 
 .item dt { 

@@ -63,6 +63,11 @@ table {
   border-spacing: 0;
   width: 80%;
 }
+
+td, th {
+  padding: .3em;
+  text-align: center;
+}
 /*-----global typography----------------- */
 h1 {
   font-family: 'Parisr';
@@ -138,12 +143,20 @@ p a {
   z-index: 1;
 }
 
-/* Global container used throughout project */
+/*------- Global container used throughout project ---------*/
 .main-container{
-  padding-top: 3em;
+  padding: 3em 0;
   width: 90%; 
   margin: auto;
+}
 
+/* Global container styles -used frequently */
+.main-container ul{
+  list-style: none;
+}
+.main-container ul li{
+  padding-bottom: .4em;
+  font-size: 1.15em;
 }
 
 
@@ -288,7 +301,7 @@ a:focus {
 }
 
 /*Media queries for header navigation - tablet */
-@media (max-width:1024px) {
+@media (min-width: 661px) and (max-width: 1024px) {
   .logonav {
     flex-direction: column;
     align-items: flex-start;
@@ -347,13 +360,13 @@ a:focus {
 /* ------------------Lead image and  Our Business, Our Books, Invest in Books section ------------------------ */
 
 .leadimage {
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   width: 100%;
-  z-index: -1;
+  z-index: 0;
+
 }
 
 #lead{
@@ -391,9 +404,12 @@ a:focus {
   background-color: rgba(255, 255, 255, 0);
   color: #1a1a1a;
   padding: .75em 2em;
-  font-size: 1em;
+  font-size: 1.1em;
   border-radius: .15em;
-  margin-top: .7em;
+  margin-top: .8em;
+  position: absolute;
+  z-index: 200;
+  text-decoration: none;
 
 }
 
@@ -402,22 +418,26 @@ a:focus {
   background-color: rgba(255, 255, 255, 0);
   color: #1a1a1a;
   padding: .5em 2em;
-  margin-top: 2.7em;
+  margin: 0 0 3em 0;
+  text-decoration: none;
+  font-weight: normal;
+  position: unset;
 }
 
 .main-button:hover,
 .main-button:focus {
-  background-color: #f5f5f5;
-  color: #1a1a1a;
-  transition: .3s;
-  border: 1px solid #1a1a1a;
+  background-color:  #1a1a1a;
+  color: #f5f5f5;
+  transition: .2s;
+  border: 1px solid #f5f5f5;
+  text-decoration: none;
 }
 
 .main-button.dark:hover,
 .main-button.dark:focus {
   background-color: #1a1a1a;
   color: #f5f5f5;
-  transition: .3s;
+  transition: .2s;
   border: 1px solid #f5f5f5;
 }
 
@@ -431,6 +451,7 @@ a:focus {
   top: 14em;
   display: inline-block;
   width: 35em;
+  z-index:100;
 }
 
 main {
@@ -462,6 +483,7 @@ video {
   width: 100%;
 }
 
+/* CSS for images to the right of video with hover effect */
 .parentimage {
   width: 20em;
   height: 15em;
@@ -472,12 +494,17 @@ video {
 .colimage {
   width: 100%;
   height: 100%;
+  position: relative;
   background-repeat: no-repeat;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
   background-position: center;
+}
+
+.colimage span {
+  display: none;
 }
 
 #about {
@@ -489,23 +516,6 @@ video {
   background-image: url('../images/home/stevenson.jpg');
 
 }
-
-
-.colimage h4 {
-  display: block;
-  font-size: 35px;
-  color: #ffffff !important;
-  font-family: sans-serif;
-  text-align: center;
-  margin: auto;
-  font-family: 'Crimson Text', Georgia, serif;
-  height: 50px;
-  cursor: pointer;
-  position: relative;
-  top: 2.5em;
-  /*text-decoration: none;*/
-}
-
 
 .colimage:before {
   content: "";
@@ -523,12 +533,46 @@ video {
   display: block;
 }
 
+.parentimage:hover .abouttext,
+.parentimage:focus .abouttext{
+  display: block;
+}
+
+
 .parentimage:hover .colimage,
 .parentimage:focus .colimage {
   transform: scale(1.2);
 }
+.abouttext {
+  color: white;
+  font-size: 1.7em;
+  font-family: 'Crimson Text', Georgia, serif;
+  margin: auto;
+  top: 0;
+  left:0;
+  right:0;
+  position:absolute;
+  text-align:center;
+  padding: .4em;
+  margin-top: 2.5em;
+  width: 80%;
+}
 
-/* Tablet breaking point for lead image and three features - Our Business, Our Books, Invest in Books  */
+/* CSS exclusively for tablet width for images to the right of video*/
+
+@media (min-width: 661px) and (max-width: 1024px) {
+  .abouttext {
+    font-size: 2.5em;
+    margin-top: 1.9em;
+    
+  }
+
+}
+
+
+
+/* Tablet breaking point for lead image and three features - Our Business, Our Books, Invest in Books 
+I'm not using an '& min width' here as some css will continue to be used by smaller screens (ie below 660px) */
 @media (max-width:1024px) {
   .heading-text {
     top: 12.5em;
@@ -536,7 +580,7 @@ video {
 
   .intro-container {
     flex-direction: column;
-    width: 85%;
+    width: 90%;
   }
 
   .intro-col {
@@ -577,7 +621,9 @@ video {
 
 }
 
-/* Mobile breaking point for lead image and three features - Our Business, Our Books, Invest in Books  */
+
+/* Mobile breaking point for lead image and three features - Our Business, Our Books, Invest in Books 
+The mobile still takes some css from tablet css above */
 @media (max-width:660px) {
   .heading-text {
     height: 15em;
@@ -601,15 +647,10 @@ video {
     width: 17.5em;
     height: 13.125em;
   }
-
 }
 
-.abouttext {
-  width: 60%;
-  color: white;
-  font-size: 2.5em;
-  font-family: 'Crimson Text', Georgia, serif;
-}
+
+
 
 /*---------------- Featured book section-------------------------- */
 .highlightcontainer {
@@ -665,6 +706,9 @@ video {
 .books img {
   margin: 1em 2em 0 0;
 }
+
+
+
 
 /*  tablet media queries for featured book section*/
 @media (max-width:1024px) {
@@ -826,14 +870,16 @@ footer nav ul li a {
   text-decoration: none;
 }
 
-/* Footer media queries for tablet */
-@media (max-width:1024px) {
+
+
+/* Footer media queries just for tablet */
+@media (min-width: 661px) and (max-width: 1024px) {
   footer {
     justify-content: center;
   }
 }
 
-/* Footer media queries for mobile */
+/* Footer media queries just for mobile */
 @media (max-width:660px) {
   footer {
     flex-direction: column;
