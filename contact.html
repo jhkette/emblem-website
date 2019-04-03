@@ -13,7 +13,6 @@
     <![endif]-->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/contact.css">
-
     <title>Document</title>
 </head>
 
@@ -39,7 +38,7 @@
             </div>
             <nav role="navigation">
                 <ul class="nav-links">
-                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="books.html">Books</a></li>
                     <li><a href="#">Delivery</a></li>
                     <li><a href="#">About Us</a></li>
@@ -50,61 +49,74 @@
     </header>
 
 
+
+    <div class="leadimage" role="banner" id="contact">
+        <!-- cc license from https://pixabay.com/photos/books-bookshelf-library-education-3480058/ -->
+
+    </div>
     <nav class="breadcrumbs" role="navigation">
         <ul>
             <li><a href="/">Home</a><i class="arrow right"></i></li>
-
             <li><a href="#" id="currentpage">Contact</a><i class="arrow right"></i></li>
-
-
-
         </ul>
     </nav>
 
     <main role="main" id="content" class="main-container">
-        <form method="POST" action="#">
-            <fieldset>
-                <legend>Contact form</legend>
-                <div class="controlgroup">
-                    <label for="title">Title</label>
-                    <select name="title" id="title">
+        <h2 class="intro">Contact us</h2>
+        <p>Please feel free to contact is if you are looking to buy a book not listed in our collection, or you are
+            looking to sell a book,
+            have a book valued or have a book repaired. We try to answer all queries within 24 hours of receipt. </p>
+        <div class="flexmain">
+            <form method="POST" action="#">
+                <fieldset>
+                    <legend>Contact form</legend>
+                    <div class="controlgroup">
+                        <label for="title">Title</label>
+                        <select name="title" id="title">
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Dr">Dr</option>
+                            <option value="Dr">Prof</option>
+                        </select>
+                    </div>
+                    <div class="controlgroup">
+                        <label for="name">Your name:<sup>*</sup></label>
+                        <input required type="text" aria-required="true" name="name" id="name">
+                    </div>
 
-                        <option value="Mr">Mr</option>
-                        <option value="Mrs">Mrs</option>
-                        <option value="Ms">Ms</option>
-                        <option value="Miss">Miss</option>
-                        <option value="Dr">Dr</option>
-                        <option value="Dr">Prof</option>
-                    </select>
-                </div>
-                <div class="controlgroup">
-                    <label for="name">Your name:</label>
-                    <input required type="text" name="name" id="name">
-                </div>
-
-                <div class="controlgroup">
-                    <label for="email">Email address:</label>
-                    <input required type="email" name="email" id="email">
-                </div>
-                <div class="controlgroup">
-                    <label for="query">Nature of query</label>
-                    <select name="query" id="query">
-                        <option value="Buy books">Buy books</option>
-                        <option value="Sell books">Sell books</option>
-                        <option value="Return a book">Return a book</option>
-                        <option value="Delivery">Delivery</option>
-                        <option value="Complaint">Complaint</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
-                <div class="controlgroup">
-                    <label for="msg">Message</label>
-                    <textarea placeholder="Type your message here..." name="message" id="msg"></textarea>
-                </div>
-                <input type="submit" id="submit" value="Send message">
-            </fieldset>
-        </form>
-
+                    <div class="controlgroup">
+                        <label for="email">Email address:<sup>*</sup></label>
+                        <input required type="email" aria-required="true" name="email" id="email">
+                    </div>
+                    <div class="controlgroup">
+                        <label for="query">Nature of query</label>
+                        <select name="query" id="query">
+                            <option value="Buy books">Buy books</option>
+                            <option value="Sell books">Sell books</option>
+                            <option value="Return a book">Return a book</option>
+                            <option value="Delivery">Delivery</option>
+                            <option value="Complaint">Complaint</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="controlgroup">
+                        <label for="msg">Message:<sup>*</sup></label>
+                        <textarea required type="text" aria-required="true" placeholder="Type your message here..."
+                            name="message" id="msg"></textarea>
+                    </div>
+                    <input type="submit" id="submit" value="Send message">
+                </fieldset>
+            </form>
+            <a href="delivery.html">
+                <aside class="deliveryinfo">
+                    <h3>Interested in delivery rates?</h3>
+                    <p>All deliveries are included in the price of the book for books over £500. All goods are sent
+                        first class.</p>
+                </aside>
+            </a>
+        </div>
     </main>
     <div class="footercontainer">
         <footer role="contentinfo">

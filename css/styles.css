@@ -216,6 +216,12 @@ a:focus {
   text-decoration: underline;
 }
 
+#currentpage {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+
 /* icon for breadcrumbs */
 i {
   border: solid black;
@@ -318,14 +324,19 @@ a:focus {
 /* ------------------Lead image and  Our Business, Our Books, Invest in Books section ------------------------ */
 
 .leadimage {
-  height: 32em;
-  background-image: url('../images/home/book3.jpg');
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
   width: 100%;
   z-index: -1;
+}
+
+#lead{
+  height: 32em;
+  background-image: url('../images/contact/largebookshelf.jpg');
+  /* background-image: url('../images/home/book3.jpg'); */
 }
 
 .leadimage h2 {

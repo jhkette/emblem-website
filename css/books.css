@@ -63,10 +63,6 @@
     text-decoration: none;
     border: 0;
 }
-#currentpage {
-    text-decoration: underline;
-    font-weight: 900;
-}
 
 /* Media quries for side navigation */
 @media (max-width:660px) {
