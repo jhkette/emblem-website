@@ -1,5 +1,0 @@
-skip navigation
-aria labelling
-add alt tags
-check w3c
-add text

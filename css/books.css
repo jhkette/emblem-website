@@ -3,6 +3,7 @@
 /* Main containers to divide page */
 .container {
     width: 90%;
+    max-width: 1400px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -29,6 +30,7 @@
 
 .sidenav {
     width: 90%;
+    max-width: 1400px;
     margin: auto;
 }
 
@@ -171,6 +173,7 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
+    max-width: 1400px;
     margin: auto;
     align-items: center;
     padding-bottom: 1.5em;
@@ -227,6 +230,7 @@
 
 .nineteenthintro {
     width: 90%;
+    max-width: 1400px;
     margin: auto;
     padding: 1.5em 0 3em 0;
 }
@@ -234,6 +238,7 @@
 
 .bookcatalogue {
     width: 90%;
+    max-width: 1400px;
     margin: auto;
     display: flex;
     justify-content: flex-start;

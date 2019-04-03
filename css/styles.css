@@ -147,6 +147,7 @@ p a {
 .main-container{
   padding: 3em 0;
   width: 90%; 
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -163,6 +164,7 @@ p a {
 /* commonlinks */
 .commonlinks {
   width: 90%;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -202,6 +204,7 @@ a:focus {
   align-items: center;
   padding: 1em 0 .4em 0;
   width: 90%;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -224,6 +227,7 @@ a:focus {
 
 .breadcrumbs {
   width: 90%;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -332,6 +336,7 @@ a:focus {
   .logonav {
     flex-direction: column;
     width: 90%;
+    max-width: 1400px;
   }
 
   .nav-links {
@@ -396,7 +401,9 @@ a:focus {
 
 .positiontext {
   width: 90%;
+  max-width: 1400px;
   margin: auto;
+  max-width: 1400px;
 }
 
 .main-button {
@@ -460,6 +467,7 @@ main {
 
 .intro-container {
   width: 90%;
+  max-width: 1400px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -661,6 +669,7 @@ The mobile still takes some css from tablet css above */
 
 .books {
   width: 90%;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -758,6 +767,7 @@ The mobile still takes some css from tablet css above */
   display: flex;
   justify-content: space-between;
   width: 90%;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -838,6 +848,7 @@ The mobile still takes some css from tablet css above */
 
 footer {
   width: 90%;
+  max-width: 1400px;
   margin: auto;
   padding: 3em 0;
   display: flex;
