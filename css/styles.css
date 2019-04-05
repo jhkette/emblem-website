@@ -49,25 +49,7 @@ body {
   background-color: #4c712b;
   color: #ffff00;
 }
-/* Global table styles */
-table, td, th {
-	border: 1px solid #000;
-}
 
-th {
-  font-weight: 900;
-}
-
-table {
-	border-collapse: collapse;
-  border-spacing: 0;
-  width: 80%;
-}
-
-td, th {
-  padding: .3em;
-  text-align: center;
-}
 /*-----global typography----------------- */
 h1 {
   font-family: 'Parisr';
