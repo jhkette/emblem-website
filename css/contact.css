@@ -23,9 +23,9 @@ form{
     width: 45%;
     margin: 1em 0 3em 0;
     border-radius: .2em;
-    padding: 1em;
+    padding: 1.3em;
     display: inline-block;
-  
+    border: 1px solid rgba(148, 148, 148, 0.885);
 }
 
 
@@ -139,7 +139,7 @@ textarea{
     }
     .flexmain{
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     } 
 }
 
@@ -147,7 +147,7 @@ textarea{
     .deliveryinfo{
         width: 90%;
     } 
-    .flexmain{
-        align-items: flex-start;
+    form {
+        border: 0;
     }
 }
