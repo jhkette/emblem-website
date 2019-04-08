@@ -52,7 +52,7 @@ body {
 
 /*-----global typography----------------- */
 h1 {
-  font-family: 'Parisr';
+  font-family: 'Parisr', serif;
   font-size: 2.9em;
   display: block;
   line-height: .6em;
@@ -62,7 +62,7 @@ h1 {
   text-rendering: geometricPrecision;
 }
 
-h1,h2,h3,h4{
+ h2, h3, h4{
   font-family: 'Crimson Text', Georgia, serif;
   text-rendering: geometricPrecision;
 
@@ -202,6 +202,8 @@ a:focus {
   display: block;
   width: 18.2em;
   margin-bottom: 1em;
+  display: flex;
+align-items: flex-end;
 }
 
 .logo {
@@ -271,7 +273,7 @@ i {
 .nav-links li {
   list-style: none;
   display: inline-block;
-  font-size: 1.15em;
+  font-size: 1.2em;
   font-weight: 100;
   font-family: 'Crimson Text', Georgia, serif;
   text-transform: uppercase;
