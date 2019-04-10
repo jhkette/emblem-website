@@ -6,6 +6,7 @@ table {
     width: 80%;
 }
 
+
 table,
 td,
 th {
@@ -24,4 +25,21 @@ th {
 
 tr:first-child {
     background-color: #ededed;
+}
+
+
+@media (max-width:1080px) {
+    table{
+        width: 100%;
+    }
+ 
+}
+
+
+@media (max-width:600px) {
+    table{
+        width: 16em;
+        font-size: .9em;
+    }
+ 
 }

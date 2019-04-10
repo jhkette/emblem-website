@@ -74,13 +74,13 @@ h2 {
 
 /* H2 heading for every page that isn't the home page */
 .intro {
-  font-size: 1.8em;
+  font-size: 1.5em;
   text-transform: uppercase;
   border-bottom: 1px solid #1a1a1a;
 }
 
 h3 {
-  font-size: 1.6em;
+  font-size: 1.5em;
   margin: .5em 0 1em 0;
   font-weight: 200;
   text-transform: uppercase;
@@ -135,7 +135,7 @@ p a {
 /*------- Global container used throughout project ---------*/
 .main-container{
   padding: 3em 0;
-  width: 90%; 
+  width: 85%; 
   max-width: 1400px;
   margin: auto;
 }
@@ -153,7 +153,7 @@ p a {
 
 /* commonlinks */
 .commonlinks {
-  width: 90%;
+  width: 85%;
   max-width: 1400px;
   margin: auto;
 }
@@ -193,14 +193,14 @@ a:focus {
   justify-content: flex-start;
   align-items: center;
   padding: 1em 0 .4em 0;
-  width: 90%;
+  width: 85%;
   max-width: 1400px;
   margin: auto;
 }
 
 .nav-header {
   display: block;
-  width: 18.2em;
+  width: 17em;
   margin-bottom: 1em;
   display: flex;
 align-items: flex-end;
@@ -218,7 +218,7 @@ align-items: flex-end;
 /*--------- breadcrumbs navigation ----------*/
 
 .breadcrumbs {
-  width: 90%;
+  width: 85%;
   max-width: 1400px;
   margin: auto;
 }
@@ -273,7 +273,7 @@ i {
 .nav-links li {
   list-style: none;
   display: inline-block;
-  font-size: 1.2em;
+  font-size: 1.15em;
   font-weight: 100;
   font-family: 'Crimson Text', Georgia, serif;
   text-transform: uppercase;
@@ -297,7 +297,7 @@ a:focus {
 }
 
 /*Media queries for header navigation - tablet */
-@media (min-width: 661px) and (max-width: 1024px) {
+@media (min-width: 661px) and (max-width: 1080px) {
   .logonav {
     flex-direction: column;
     align-items: flex-start;
@@ -306,12 +306,14 @@ a:focus {
   .nav-links {
     margin-bottom: 1em;
   }
+  
 }
 /*Media queries for header navigation - mobile */
 @media (max-width:660px) {
   nav {
     width: 100%;
   }
+  
 
   #current {
 
@@ -327,7 +329,7 @@ a:focus {
 
   .logonav {
     flex-direction: column;
-    width: 90%;
+    width: 85%;
     max-width: 1400px;
   }
 
@@ -356,6 +358,19 @@ a:focus {
 
 /* ------------------Lead image and  Our Business, Our Books, Invest in Books section ------------------------ */
 
+.leadimage:before {
+  content: '';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: linear-gradient(45deg, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%);
+opacity: .75; 
+}
+
+
+
 .leadimage {
   background-repeat: no-repeat;
   background-size: cover;
@@ -367,24 +382,23 @@ a:focus {
 }
 
 #lead{
-  height: 35em;
+  height: 29em;
   background-image: url('../images/home/largebookshelf.jpg');
   /* background-image: url('../images/home/book3.jpg'); */
 }
 
 .leadimage h2 {
-
-  color: #1a1a1a;
+  color: #f5f5f5;
   line-height: 1em;
-  margin-top: .6em;
-  font-size: 2.3em;
+  margin-top: .2em;
+  font-size: 2.95em;
   line-height: 1.1em;
+  
 }
 
 .leadimage p {
   line-height: 1em;
-
-  color: #1a1a1a;
+  color: #f5f5f5;
   margin: .5em 0 .4em 0em;
   font-size: 1.2em;
 }
@@ -392,16 +406,16 @@ a:focus {
 
 
 .positiontext {
-  width: 90%;
+  width: 85%;
   max-width: 1400px;
   margin: auto;
   max-width: 1400px;
 }
 
 .main-button {
-  border: 1px solid #1a1a1a;
+  border: 1px solid #f5f5f5;
   background-color: rgba(255, 255, 255, 0);
-  color: #1a1a1a;
+  color: #f5f5f5;
   padding: .75em 2em;
   font-size: 1.1em;
   border-radius: .15em;
@@ -443,13 +457,13 @@ a:focus {
 
 .heading-text {
   width: auto;
-  background-color: rgba(204, 227, 215, 0.9);
-  padding: 1em 2em 2em 2em;
+  
+  padding: 1.5em;
   height: 14em;
   position: relative;
-  top: 14em;
+  top: 9em;
   display: inline-block;
-  width: 35em;
+  width: 37em;
   z-index:100;
 }
 
@@ -458,7 +472,7 @@ main {
 }
 
 .intro-container {
-  width: 90%;
+  width: 85%;
   max-width: 1400px;
   margin: auto;
   display: flex;
@@ -560,7 +574,7 @@ video {
 
 /* CSS exclusively for tablet width for images to the right of video*/
 
-@media (min-width: 661px) and (max-width: 1024px) {
+@media (min-width: 661px) and (max-width: 1080px) {
   .abouttext {
     font-size: 2.5em;
     margin-top: 1.9em;
@@ -573,14 +587,14 @@ video {
 
 /* Tablet breaking point for lead image and three features - Our Business, Our Books, Invest in Books 
 I'm not using an '& min width' here as some css will continue to be used by smaller screens (ie below 660px) */
-@media (max-width:1024px) {
+@media (max-width:1080px) {
   .heading-text {
     top: 12.5em;
   }
 
   .intro-container {
     flex-direction: column;
-    width: 90%;
+    width: 85%;
   }
 
   .intro-col {
@@ -653,14 +667,14 @@ The mobile still takes some css from tablet css above */
 
 
 /*---------------- Featured book section-------------------------- */
-.highlightcontainer {
+.container-highlight {
   background: rgb(196, 222, 208);
-  background: linear-gradient(90deg, rgba(196, 222, 208, 1) 0%, rgba(212, 233, 222, 1) 47%, rgba(231, 249, 243, 1) 100%);
+  background: linear-gradient(90deg, rgba(196, 222, 208, 1) 0%, rgba(212, 233, 222, 1) 47%, rgb(244, 255, 251) 100%);
   padding: 3em 0 2em 0;
 }
 
 .books {
-  width: 90%;
+  width: 85%;
   max-width: 1400px;
   margin: auto;
 }
@@ -712,7 +726,7 @@ The mobile still takes some css from tablet css above */
 
 
 /*  tablet media queries for featured book section*/
-@media (max-width:1024px) {
+@media (max-width:1080px) {
   .books {
     width: 85%;
 
@@ -758,7 +772,7 @@ The mobile still takes some css from tablet css above */
   padding: 2em 0;
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 85%;
   max-width: 1400px;
   margin: auto;
   align-items: flex-start;
@@ -802,7 +816,7 @@ The mobile still takes some css from tablet css above */
 
 /* Buy, Value Sell section for both tablet and mobile */
 
-@media (max-width:1024px) {
+@media (max-width:1080px) {
 
   .bsvtext {
     padding: 1em 0;
@@ -840,7 +854,7 @@ The mobile still takes some css from tablet css above */
 }
 
 footer {
-  width: 90%;
+  width: 85%;
   max-width: 1400px;
   margin: auto;
   padding: 3em 0;
@@ -877,7 +891,7 @@ footer nav ul li a {
 
 
 /* Footer media queries just for tablet */
-@media (min-width: 661px) and (max-width: 1024px) {
+@media (min-width: 661px) and (max-width: 1080px) {
   footer {
     justify-content: center;
   }

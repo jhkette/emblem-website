@@ -2,7 +2,7 @@
 
 /* Main containers to divide page */
 .container {
-    width: 90%;
+    width: 85%;
     max-width: 1400px;
     margin: auto;
     display: flex;
@@ -29,7 +29,7 @@
 /*---------------- side navigation -------------*/
 
 .sidenav {
-    width: 90%;
+    width: 85%;
     max-width: 1400px;
     margin: auto;
 }
@@ -106,7 +106,7 @@
 }
 
 
-
+/* hidden background until :hover */
 .authorimage:before {
     content: "";
     display: none;
@@ -123,7 +123,7 @@
     display: block;
 }
 
-
+/* Hidden text content unless :hover state is activated */
 .parentauthor span {
   color: white;
   font-size: 1.7em;
@@ -169,25 +169,24 @@
 
 /* Extra info on 19th cen (an aside) */
 
-.extra {
+.aside-wimage {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 85%;
     max-width: 1400px;
     margin: auto;
-    align-items: center;
     padding-bottom: 1.5em;
 }
 
-.extra p {
+.aside-wimage p {
     margin-right: 5em;
 }
 
-.extra h3 {
+.aside-wimage h3 {
     margin-right: 3.59375em;
 }
 
-.extra img {
+.aside-wimage img {
     display: block;
     width: 15em;
     
@@ -195,7 +194,7 @@
 
 /* Media queries for author grid and books info - tablet */
 
-@media (max-width:1024px) {
+@media (max-width:1080px) {
     .authors {
         flex-basis: 100%;
         justify-content: center;
@@ -203,11 +202,11 @@
     .books-intro{
         flex-basis: 100%;
     }
-    .extra{
+    .aside-wimage{
         flex-direction: column;
         justify-content: center;
     }
-    .extra p, h3 {
+    .aside-wimage p, h3 {
         margin-right: 0;
     }
 }
@@ -229,7 +228,7 @@
 /* ----------------------19th Century Books------------------------------------------- */
 
 .nineteenthintro {
-    width: 90%;
+    width: 85%;
     max-width: 1400px;
     margin: auto;
     padding: 1.5em 0 3em 0;
@@ -237,7 +236,7 @@
 
 
 .bookcatalogue {
-    width: 90%;
+    width: 85%;
     max-width: 1400px;
     margin: auto;
     display: flex;
@@ -248,7 +247,7 @@
 
 
 .item {
-    width: 24em;
+    width: 20em;
     border-top: 1px solid #1a1a1a;
     border-bottom: 1px solid #1a1a1a;
     margin-right: 2.5em;
@@ -281,9 +280,9 @@
 }
 
 /* Book catalogue media queries - tablet and mobile */
-@media (max-width:1024px) {
+@media (max-width:1080px) {
     .bookcatalogue {
-        width: 90%;
+        width: 85%;
         margin: auto;
         display: flex;
         justify-content: center;
