@@ -459,8 +459,6 @@ opacity: .45;
 
 .heading-text {
   width: auto;
-  
-  padding: 1.5em;
   height: 14em;
   position: relative;
   top: 11em;
@@ -577,12 +575,7 @@ video {
 /* CSS exclusively for tablet width for images to the right of video*/
 
 @media (min-width: 661px) and (max-width: 1080px) {
-  /* increase text size slightly for hover effect on images */
-  .abouttext {
-    font-size: 2.5em;
-    margin-top: 1.9em;
-    
-  }
+ 
   video {
     width: 400px;
     height: 300px;
@@ -636,7 +629,7 @@ The mobile still takes some css from tablet css above */
   }
 
   .heading-text h2 {
-    font-size: 1.3em;
+    font-size: 2em;
   }
 
   .centervideo{
