@@ -400,7 +400,7 @@ opacity: .45;
   line-height: 1.3em;
   color: #f5f5f5;
   margin: .5em 0 .4em 0em;
-  font-size: 1.3em;
+  font-size: 1.55em;
   font-weight: 500;
 
 }
@@ -653,7 +653,7 @@ The mobile still takes some css from tablet css above */
 /*---------------- Featured book section-------------------------- */
 .container-highlight {
   background: rgb(196, 222, 208);
-  background: linear-gradient(90deg, rgb(196, 222, 208) 0%, rgb(212, 233, 222) 47%, rgb(224, 247, 239) 100%);
+  background:linear-gradient(90deg, rgb(196, 222, 208) 0%, rgb(212, 233, 222) 47%, rgb(242, 255, 250) 100%);
   padding: 3em 0 2em 0;
 }
 
@@ -831,7 +831,7 @@ The mobile still takes some css from tablet css above */
 }
 
 /* ----------------Footer styles------------------------- */
-.footercontainer {
+.container-footer {
   border-top: 1px solid #cccccc;
   background-color: #e2e2e2;
 
