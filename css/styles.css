@@ -184,7 +184,7 @@ p a {
 }
 
 .commonlinks li a:hover,
-a:focus {
+.commonlinks li a:focus {
   text-decoration: underline;
 }
 /*----- Logo styles ------ */
@@ -243,7 +243,7 @@ align-items: flex-end;
 }
 
 .breadcrumbs li a:hover,
-a:focus {
+.breadcrumbs li a:focus {
   color: #236841;
   text-decoration: underline;
 }
@@ -286,7 +286,7 @@ i {
 }
 
 .nav-links a:hover,
-a:focus {
+.nav-links a:focus {
   color: #226841;
   transition-duration: .1s;
 
@@ -366,7 +366,7 @@ right: 0;
 bottom: 0;
 left: 0;
 background: linear-gradient(45deg, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%);
-opacity: .45; 
+opacity: .55; 
 }
 
 
@@ -570,17 +570,6 @@ video {
   padding: .4em;
   margin-top: 2.5em;
   width: 80%;
-}
-
-/* CSS exclusively for tablet width for images to the right of video*/
-
-@media (min-width: 661px) and (max-width: 1080px) {
- 
-  video {
-    width: 400px;
-    height: 300px;
-  }
-
 }
 
 
