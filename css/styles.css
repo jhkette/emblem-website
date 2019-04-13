@@ -393,6 +393,8 @@ opacity: .55;
   margin-top: .2em;
   font-size: 2.95em;
   line-height: 1.1em;
+
+  text-shadow: -1px 1px rgba(205, 205, 205, 0.263);
   
 }
 
