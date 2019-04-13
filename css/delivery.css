@@ -27,6 +27,13 @@ tr:first-child {
     background-color: #ededed;
 }
 
+caption {
+    text-align: left;
+    margin-bottom: 1em;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
 
 @media (max-width:1080px) {
     table{

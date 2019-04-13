@@ -4,16 +4,31 @@
   src: url('../fonts/parisr.woff') format("woff"),
     url('../fonts/parisr.eot?#iefix') format("embedded-opentype"),
     url('../fonts/parisr.ttf') format("truetype"),
-    url('../fonts/parisr.svg') format("svg");
+    url('../fonts/parisr.svg#Parisr') format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 /* browser resest */
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 /* display all html5 elements as blocks */
@@ -28,15 +43,11 @@ main {
 }
 
 
-/* set font-size to 100% */
-html {
-  font-size: 100%;
-}
-
 /* global font-styles */
 body {
   font-family: 'Work Sans', Helvetica, Arial, sans-serif;
   color: #1a1a1a;
+  line-height: 1em;
 }
 
 .skiplink {
@@ -65,11 +76,13 @@ h1 {
  h2, h3, h4{
   font-family: 'Crimson Text', Georgia, serif;
   text-rendering: geometricPrecision;
-
+  
 }
+
 
 h2 {
   font-size: 2.3em;
+  padding-bottom: .35em;
 }
 
 /* H2 heading for every page that isn't the home page */
@@ -81,10 +94,11 @@ h2 {
 
 h3 {
   font-size: 1.5em;
-  margin: .5em 0 1em 0;
+  margin: .5em 0 .7em 0;
   font-weight: 200;
   text-transform: uppercase;
   border-bottom: 1px solid #1a1a1a;
+  padding-bottom: .3em;
   
 }
 
@@ -92,6 +106,13 @@ h4 {
   font-size: 1.4em;
   margin: .5em 0 1em 0;
   font-weight: 200;
+  
+  padding-bottom: .25em;
+ 
+}
+
+h4 span {
+  padding-top: .25em;
 }
 
 p {
@@ -100,6 +121,10 @@ p {
   line-height: 1.6em;
   font-weight: 500;
   text-rendering: optimizeLegibility;
+}
+
+li, dt, dl {
+  line-height: 1.4em;
 }
 
 figcaption {
@@ -113,6 +138,11 @@ figcaption {
 p a {
   color: #236841;
   font-weight: 900;
+}
+
+ /* This ensures there is no underline effect on links */
+ .no-underline {
+  text-decoration: none;
 }
 
 
@@ -394,7 +424,7 @@ opacity: .55;
   font-size: 2.95em;
   line-height: 1.1em;
 
-  text-shadow: -1px 1px rgba(205, 205, 205, 0.263);
+
   
 }
 
