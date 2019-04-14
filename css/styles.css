@@ -45,7 +45,7 @@ main {
 
 /* global font-styles */
 body {
-  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Work Sans', sans-serif;
   color: #1a1a1a;
   line-height: 1em;
 }
@@ -74,7 +74,7 @@ h1 {
 }
 
  h2, h3, h4{
-  font-family: 'Crimson Text', Georgia, serif;
+  font-family: 'Crimson Text', serif;
   text-rendering: geometricPrecision;
   
 }
@@ -190,7 +190,6 @@ p a {
 
 .commonlinkscontainer {
   border-bottom: 1px solid #ddd;
-
   height: 1.55em;
   width: 100%;
 
@@ -305,7 +304,7 @@ i {
   display: inline-block;
   font-size: 1.2em;
   font-weight: 400;
-  font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Work Sans', sans-serif;
   
 }
 
@@ -419,10 +418,10 @@ opacity: .55;
 
 .leadimage h2 {
   color: #f5f5f5;
-  line-height: 1em;
   margin-top: .2em;
-  font-size: 2.95em;
-  line-height: 1.1em;
+  font-size: 3.2em;
+  line-height: .7em;
+  padding-bottom: .25em;
 
 
   
@@ -589,10 +588,11 @@ video {
 .parentimage:focus .colimage {
   transform: scale(1.2);
 }
+
 .abouttext {
   color: white;
   font-size: 1.7em;
-  font-family: 'Crimson Text', Georgia, serif;
+  font-family: 'Crimson Text', serif;
   margin: auto;
   top: 0;
   left:0;
@@ -600,7 +600,7 @@ video {
   position:absolute;
   text-align:center;
   padding: .4em;
-  margin-top: 2.5em;
+  margin-top: 3.8em;
   width: 80%;
 }
 
@@ -650,7 +650,8 @@ The mobile still takes some css from tablet css above */
   }
 
   .heading-text h2 {
-    font-size: 2em;
+    font-size: 2.3em;
+    line-height: 1.1em;
   }
 
   .centervideo{

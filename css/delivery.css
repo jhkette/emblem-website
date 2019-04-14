@@ -4,6 +4,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 80%;
+    
 }
 
 
@@ -11,6 +12,16 @@ table,
 td,
 th {
     border: 1px solid #000;
+}
+
+details{
+    position: relative;
+}
+
+summary{
+    position: absolute;
+    left: -2000px;
+    top: -2000px;
 }
 
 th {
@@ -43,10 +54,17 @@ caption {
 }
 
 
-@media (max-width:600px) {
+@media (max-width:660px) {
     table{
-        width: 16em;
-        font-size: .9em;
+        width: 18em;
+        font-size: .95em;
+    
     }
+
+    td,
+th {
+    padding: .1em;
+   
+}
  
 }
