@@ -347,8 +347,9 @@ i {
   #current {
 
     background-color: #ededed;
-    color: #1a1a1a;
+    color: #236841;
     border-bottom: 1px solid #535353;
+    font-weight: 900;
   }
 
   #current:hover,
@@ -382,6 +383,10 @@ i {
     color: #226841;
     width: fit-content;
     font-weight: 900;
+  }
+  /* because lines wrap */
+  h3{
+    line-height: 1.1em;
   }
 }
 
@@ -673,6 +678,15 @@ The mobile still takes some css from tablet css above */
     line-height: 1.4em;
     margin-top: 1.8em;
     
+  }
+
+  .main-button.dark{
+    margin: 0 0 4.5em 0
+  }
+
+
+  .leadimage h2{
+    font-size: 2em;
   }
 }
 

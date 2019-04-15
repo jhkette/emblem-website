@@ -55,15 +55,19 @@ caption {
 
 
 @media (max-width:660px) {
+    /* font-size needs to be smaller to ensure table fits naturally on smaller screens */
     table{
-        width: 18em;
-        font-size: .95em;
+        font-size: .8em;
     
     }
 
+    caption{
+        font-size: 1.2em
+    }
+
     td,
-th {
-    padding: .1em;
+    th {
+    padding: .05em;
    
 }
  
