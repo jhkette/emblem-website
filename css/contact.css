@@ -97,10 +97,11 @@ textarea{
     font-style: italic;
     font-family: 'Work Sans', Helvetica, Arial, sans-serif;
     height: 10em;
-    width: 20em;
+    width: 23.5em;
     border: 1px solid rgba(148, 148, 148, 0.885);
     border-radius: .2em;
     font-size: .75em;
+   
 }
 /* email contact */
 
@@ -108,7 +109,7 @@ textarea{
     color: gray;
     font-style: italic;
     font-family: 'Work Sans', Helvetica, Arial, sans-serif;
-    font-size: .75em;
+    
 }
 
 .controlgroup {
