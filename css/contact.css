@@ -57,6 +57,7 @@ input{
     border-radius: .1em;
     border: 1px solid rgba(148, 148, 148, 0.885);
     margin-bottom: 1em;
+  
 }
 input[type=submit] { background-color: #236841;
     font-weight: 700;
@@ -102,8 +103,15 @@ textarea{
     width: 23.5em;
     border: 1px solid rgba(148, 148, 148, 0.885);
     border-radius: .2em;
-    font-size: .75em;
    
+   
+}
+textarea::placeholder{
+    font-size: 12px;
+}
+
+input::placeholder{
+    font-size: 12px;
 }
 /* email contact */
 
@@ -111,6 +119,7 @@ textarea{
     color: gray;
     font-style: italic;
     font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    
     
 }
 
@@ -161,7 +170,7 @@ textarea{
     form {
         border: 0;
         padding: 0;
-        margin: 0 0 3em 0;
+        margin: 2em 0 3em 0;
     }
     #contact{
         display: none;

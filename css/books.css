@@ -213,7 +213,7 @@
 
 /* Media queries for author grid and books info - mobile */
 
-@media (max-width:600px) {
+@media (max-width:660px) {
     .author-flex{
       justify-content: center;
     }
@@ -240,7 +240,7 @@
     max-width: 1400px;
     margin: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
     padding-bottom: 7em;
 }
